@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import "./styles/App.min.css";
 import Menu from "./components/Menu/Menu";
 import Background from "./images/home.png";
@@ -12,7 +13,8 @@ function App() {
   return (
     <main className="App">
       <Menu />
-      <Header image={Background} title={title} text={text} />
+      <Header image={Background} title={title} text={text} btnText="over ons" />
+      <Footer />
     </main>
   );
 }
