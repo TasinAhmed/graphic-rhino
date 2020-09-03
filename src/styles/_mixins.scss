@@ -1,0 +1,23 @@
+@mixin respond($size) {
+  @if $size == lg {
+    // 1199.98px
+    @media (max-width: 75em) {
+      @content;
+    }
+  } @else if $size == md {
+    // 991.98px
+    @media (max-width: 62em) {
+      @content;
+    }
+  } @else if $size == sm {
+    // 767.98px
+    @media (max-width: 48em) {
+      @content;
+    }
+  } @else if $size == xs {
+    // 575.98x
+    @media (max-width: 36em) {
+      @content;
+    }
+  }
+}

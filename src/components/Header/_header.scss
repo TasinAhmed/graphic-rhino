@@ -1,0 +1,20 @@
+.header {
+  height: 80rem;
+  background-color: red;
+  background-position: center;
+  background-size: cover;
+  color: $color-white;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    width: 48rem;
+  }
+
+  &__description {
+    font-size: 2.5rem;
+  }
+}
