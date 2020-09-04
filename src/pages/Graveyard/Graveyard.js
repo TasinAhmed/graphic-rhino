@@ -9,7 +9,7 @@ const text =
 
 function Graveyard() {
   return (
-    <>
+    <div className="graveyard">
       <Helmet>
         <title>Graphic Rhino | Graveyard</title>
       </Helmet>
@@ -19,7 +19,7 @@ function Graveyard() {
         text={text}
         btnText="bekijk ons werk"
       />
-    </>
+    </div>
   );
 }
 

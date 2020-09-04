@@ -7,11 +7,7 @@ function Footer() {
       <div className="container">
         <div className="footer__main">
           <div className="footer__logo-content">
-            <img
-              src={Logo}
-              className="footer__logo"
-              alt="Graphic Rhino Logo"
-            ></img>
+            <img src={Logo} className="footer__logo" alt="Graphic Rhino Logo" />
             <div className="footer__slogan">take design by its horns</div>
           </div>
           <div className="footer__copyright">&copy; 2020 Graphic Rhino</div>

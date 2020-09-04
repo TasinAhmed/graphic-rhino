@@ -9,12 +9,12 @@ const text =
 
 function Contact() {
   return (
-    <>
+    <div className="contact">
       <Helmet>
         <title>Graphic Rhino | Contact</title>
       </Helmet>
       <Header image={Background} title={title} text={text} />
-    </>
+    </div>
   );
 }
 

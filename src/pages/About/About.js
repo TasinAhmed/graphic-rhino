@@ -9,7 +9,7 @@ const text =
 
 function About() {
   return (
-    <>
+    <div className="about">
       <Helmet>
         <title>Graphic Rhino | About</title>
       </Helmet>
@@ -19,7 +19,7 @@ function About() {
         text={text}
         btnText="contacteer ons"
       />
-    </>
+    </div>
   );
 }
 

@@ -9,7 +9,7 @@ const text =
 
 function Diensten() {
   return (
-    <>
+    <div className="diensten">
       <Helmet>
         <title>Graphic Rhino | Diensten</title>
       </Helmet>
@@ -19,7 +19,7 @@ function Diensten() {
         text={text}
         btnText="contacteer ons"
       />
-    </>
+    </div>
   );
 }
 

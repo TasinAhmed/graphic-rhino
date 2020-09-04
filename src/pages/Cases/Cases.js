@@ -9,12 +9,12 @@ const text =
 
 function Cases() {
   return (
-    <>
+    <div className="cases">
       <Helmet>
         <title>Graphic Rhino | Cases</title>
       </Helmet>
       <Header image={Background} title={title} text={text} btnText="over ons" />
-    </>
+    </div>
   );
 }
 
