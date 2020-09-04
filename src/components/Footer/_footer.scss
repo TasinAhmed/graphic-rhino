@@ -3,8 +3,8 @@
   font-size: 1.4rem;
 
   .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr) auto;
+    display: flex;
+    justify-content: space-between;
     padding: 6rem 0;
   }
 

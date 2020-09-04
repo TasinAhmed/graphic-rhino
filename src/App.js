@@ -1,21 +1,33 @@
 import React from "react";
-import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import "./styles/App.min.css";
 import Menu from "./components/Menu/Menu";
-import Background from "./images/home.png";
-
-const title = "TAKE DESIGN BY IT’S HORNS";
-const text =
-  "Net als een stevige neushoorn leveren wij sterk grafisch werk! Wij gaan voor het niet alledaagse en bieden een grote variatie aan mogelijkheden.";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Diensten from "./pages/Diensten/Diensten";
+import Cases from "./pages/Cases/Cases";
+import Blog from "./pages/Blog/Blog";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Graveyard from "./pages/Graveyard/Graveyard";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
-    <main className="App">
-      <Menu />
-      <Header image={Background} title={title} text={text} btnText="over ons" />
-      <Footer />
-    </main>
+    <Router>
+      <div className="App">
+        <Menu />
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/about" component={About} />
+          <Route path="/diensten" component={Diensten} />
+          <Route path="/cases" component={Cases} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/graveyard" component={Graveyard} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
