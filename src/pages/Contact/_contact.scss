@@ -1,2 +1,36 @@
 .contact {
+  .information {
+    &__map {
+      width: 100%;
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10rem;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .form {
+    &__input {
+      display: block;
+      font-size: 1.8rem;
+      background-color: $color-grey;
+      border: none;
+      padding: 1rem;
+      width: 100%;
+      border-bottom: 2px solid lightgray;
+      margin-bottom: 3rem;
+      transition: all 0.3s;
+
+      &:focus {
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        outline: none;
+        border-bottom: 2px solid $color-primary;
+      }
+    }
+  }
 }
