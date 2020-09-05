@@ -18,6 +18,7 @@ function About() {
         title={title}
         text={text}
         btnText="contacteer ons"
+        link="/contact"
       />
     </div>
   );

@@ -18,6 +18,7 @@ function Blog() {
         title={title}
         text={text}
         btnText="bekijk ons werk"
+        link="/cases"
       />
     </div>
   );

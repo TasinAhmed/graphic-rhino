@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../images/logo.png";
 
 function Footer() {
@@ -14,18 +15,18 @@ function Footer() {
         </div>
         <div className="footer__about">
           <div className="footer__subtitle">ontdek</div>
-          <a href="/#" className="footer__link footer__item">
+          <Link to="/about" className="footer__link footer__item">
             Over ons
-          </a>
-          <a href="/#" className="footer__link footer__item">
+          </Link>
+          <Link to="/cases" className="footer__link footer__item">
             Cases
-          </a>
-          <a href="/#" className="footer__link footer__item">
+          </Link>
+          <Link to="/diensten" className="footer__link footer__item">
             Diensten
-          </a>
-          <a href="/#" className="footer__link footer__item">
+          </Link>
+          <Link to="/blog" className="footer__link footer__item">
             Blog
-          </a>
+          </Link>
         </div>
         <div className="footer__contact">
           <div className="footer__subtitle">contacteer ons</div>
@@ -60,9 +61,9 @@ function Footer() {
           <a href="/#" className="footer__link footer__item">
             Privacy policy
           </a>
-          <a href="/#" className="footer__link footer__item">
+          <Link to="/contact" className="footer__link footer__item">
             Contacteer ons
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

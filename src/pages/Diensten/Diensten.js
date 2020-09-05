@@ -18,6 +18,7 @@ function Diensten() {
         title={title}
         text={text}
         btnText="contacteer ons"
+        link="/contact"
       />
     </div>
   );

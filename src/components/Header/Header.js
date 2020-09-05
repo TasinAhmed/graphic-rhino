@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 
-function Header({ image, title, text, btnText }) {
+function Header({ image, title, text, btnText, link }) {
   return (
     <header
       className="header"
@@ -15,7 +16,11 @@ function Header({ image, title, text, btnText }) {
             <h1 className="header__title heading-1">{title}</h1>
             <p className="header__description">{text}</p>
           </div>
-          {btnText === undefined ? null : <Button btnText={btnText} />}
+          {btnText === undefined ? null : (
+            <Link to={link}>
+              <Button btnText={btnText} />
+            </Link>
+          )}
         </div>
       </div>
     </header>

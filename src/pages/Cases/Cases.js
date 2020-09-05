@@ -3,9 +3,9 @@ import Header from "../../components/Header/Header";
 import Background from "../../images/cases.png";
 import { Helmet } from "react-helmet";
 
-const title = "TAKE DESIGN BY IT’S HORNS";
+const title = "Wat wij bieden";
 const text =
-  "Net als een stevige neushoorn leveren wij sterk grafisch werk! Wij gaan voor het niet alledaagse en bieden een grote variatie aan mogelijkheden.";
+  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.";
 
 function Cases() {
   return (
@@ -13,7 +13,13 @@ function Cases() {
       <Helmet>
         <title>Graphic Rhino | Cases</title>
       </Helmet>
-      <Header image={Background} title={title} text={text} btnText="over ons" />
+      <Header
+        image={Background}
+        title={title}
+        text={text}
+        btnText="contacteer ons"
+        link="/contact"
+      />
     </div>
   );
 }

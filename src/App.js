@@ -10,11 +10,13 @@ import Blog from "./pages/Blog/Blog";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Graveyard from "./pages/Graveyard/Graveyard";
 import Contact from "./pages/Contact/Contact";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop />
         <Menu />
         <Switch>
           <Route path="/" component={Home} exact />

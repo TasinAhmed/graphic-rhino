@@ -16,7 +16,13 @@ function Home() {
       <Helmet>
         <title>Graphic Rhino | Home</title>
       </Helmet>
-      <Header image={Background} title={title} text={text} btnText="over ons" />
+      <Header
+        image={Background}
+        title={title}
+        text={text}
+        btnText="over ons"
+        link="/about"
+      />
       <main>
         <section className="quotes">
           <div className="container">
