@@ -1,8 +1,5 @@
 .contact {
   .information {
-    &__map {
-      width: 100%;
-    }
   }
 
   .container {
@@ -23,14 +20,36 @@
       padding: 1rem;
       width: 100%;
       border-bottom: 2px solid lightgray;
-      margin-bottom: 3rem;
       transition: all 0.3s;
+      margin-bottom: 0.2rem;
 
       &:focus {
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
         outline: none;
         border-bottom: 2px solid $color-primary;
       }
+
+      &:placeholder-shown + .form__label {
+        transform: translateY(-3.5rem);
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .btn {
+      font-size: 1.8rem;
+    }
+
+    &__group {
+      margin-bottom: 2rem;
+    }
+
+    &__label {
+      font-size: 1.6rem;
+      margin-left: 1rem;
+      opacity: 1;
+      display: block;
+      transition: all 0.3s;
     }
   }
 }

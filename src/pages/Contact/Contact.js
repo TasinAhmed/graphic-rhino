@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/contact.png";
 import { Helmet } from "react-helmet";
-import Map from "../../images/map.png";
 import Button from "../../components/Button/Button";
+import MapWithAMarker from "../../components/Map/MapWithAMarker";
 
 const title = "Contacteer ons";
 const text =
@@ -19,32 +19,64 @@ function Contact() {
       <main>
         <section className="information">
           <div className="container">
-            <img className="information__map" src={Map} alt="Map" />
+            <MapWithAMarker
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB052tu4KXMUhMfABQtXr8sXqprreXJ1kk&v=3.exp&libraries=geometry,drawing,places"
+              loadingElement={<div style={{ height: `100%` }} />}
+              containerElement={<div style={{ height: `400px` }} />}
+              mapElement={<div style={{ height: `100%` }} />}
+              lat={50.7556}
+              lng={3.43021}
+            />
             <form className="form">
-              <input
-                className="form__input"
-                required
-                type="text"
-                placeholder="Naam + achternaam*"
-              />
-              <input
-                className="form__input"
-                required
-                type="email"
-                placeholder="Email*"
-              />
-              <input
-                className="form__input"
-                required
-                type="tel"
-                placeholder="Telefoonnummer"
-              />
-              <input
-                className="form__input"
-                required
-                type="email"
-                placeholder="Bericht"
-              />
+              <div className="form__group">
+                <input
+                  className="form__input"
+                  required
+                  type="text"
+                  placeholder="Naam + achternaam*"
+                  id="name"
+                />
+                <label className="form__label" for="name">
+                  Naam + achternaam*
+                </label>
+              </div>
+              <div className="form__group">
+                <input
+                  className="form__input"
+                  required
+                  type="email"
+                  placeholder="Email*"
+                  id="email"
+                />
+                <label className="form__label" for="email">
+                  Email*
+                </label>
+              </div>
+              <div className="form__group">
+                <input
+                  className="form__input"
+                  required
+                  type="tel"
+                  placeholder="Telefoonnummer"
+                  id="phone"
+                />
+                <label className="form__label" for="phone">
+                  Telefoonnummer
+                </label>
+              </div>
+              <div className="form__group">
+                <input
+                  className="form__input"
+                  required
+                  type="email"
+                  placeholder="Bericht"
+                  id="report"
+                />
+                <label className="form__label" for="report">
+                  Bericht
+                </label>
+              </div>
+
               <Button btnText="verzenden" />
             </form>
           </div>
