@@ -4,10 +4,10 @@ import Background from "../../images/home.png";
 import { Helmet } from "react-helmet";
 import Quote from "../../components/Quote/Quote";
 import Explore from "../../components/Explore/Explore";
-import Img1 from "../../images/explore-1.jpg";
-import Img2 from "../../images/explore-2.jfif";
-import Img3 from "../../images/explore-3.jpg";
-import Img4 from "../../images/explore-4.jpg";
+import Img1 from "../../images/explore-1.png";
+import Img2 from "../../images/explore-2.png";
+import Img3 from "../../images/explore-3.png";
+import Img4 from "../../images/explore-4.png";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
@@ -31,10 +31,10 @@ function Home() {
       <main>
         <section className="explore">
           <div className="container">
-            <Explore num={1} title="case title"></Explore>
-            <Explore num={2} title="case title"></Explore>
-            <Explore num={3} title="blog title"></Explore>
-            <Explore num={4} title="blog title"></Explore>
+            <Explore num={1} title="case title" image={Img1}></Explore>
+            <Explore num={2} title="case title" image={Img2}></Explore>
+            <Explore num={3} title="blog title" image={Img3}></Explore>
+            <Explore num={4} title="blog title" image={Img4}></Explore>
           </div>
         </section>
         <section className="quotes">
