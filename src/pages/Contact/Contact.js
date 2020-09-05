@@ -20,12 +20,12 @@ function Contact() {
         <section className="information">
           <div className="container">
             <MapWithAMarker
-              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB052tu4KXMUhMfABQtXr8sXqprreXJ1kk&v=3.exp&libraries=geometry,drawing,places"
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi31TdptmmtjtJbOeX3sts18QAJq7F2ZQ&v=3.exp&libraries=geometry,drawing,places"
               loadingElement={<div style={{ height: `100%` }} />}
               containerElement={<div style={{ height: `400px` }} />}
               mapElement={<div style={{ height: `100%` }} />}
-              lat={50.7556}
-              lng={3.43021}
+              lat={50.7558602}
+              lng={3.4277491}
             />
             <form className="form">
               <div className="form__group">
