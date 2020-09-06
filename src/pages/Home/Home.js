@@ -77,9 +77,22 @@ function Home() {
             ></Explore>
           </div>
         </section>
-        <section className="service">
+        <section className="services">
           <div className="container">
-            <Service image={Ser1} name="Grafisch ontwerp" desc={desc} />
+            <Service
+              image={Ser1}
+              name="Grafisch ontwerp"
+              desc={desc}
+              hover={true}
+            />
+            <Service image={Ser2} name="Drukwerk" desc={desc} hover={true} />
+            <Service image={Ser3} name="Animaties" desc={desc} hover={true} />
+            <Service
+              image={Ser4}
+              name="Online marketing"
+              desc={desc}
+              hover={true}
+            />
           </div>
         </section>
         <section className="quotes">
