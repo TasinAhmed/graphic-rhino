@@ -1,6 +1,6 @@
 import React from "react";
 
-function Explore({ num, title, image }) {
+function Explore({ num, title, text, image }) {
   return (
     <div className={`explore__box explore__box--${num}`}>
       <div
@@ -11,6 +11,7 @@ function Explore({ num, title, image }) {
       ></div>
       <div className="explore__content">
         <div className="explore__title">{title}</div>
+        <div className="explore__text">{text}</div>
       </div>
     </div>
   );

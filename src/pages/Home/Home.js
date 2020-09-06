@@ -14,6 +14,8 @@ const text =
   "Net als een stevige neushoorn leveren wij sterk grafisch werk! Wij gaan voor het niet alledaagse en bieden een grote variatie aan mogelijkheden.";
 const quote = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.";
 const name = "John Doe";
+const exploreText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim ante sed velit aliquet finibus.";
 
 function Home() {
   return (
@@ -31,10 +33,30 @@ function Home() {
       <main>
         <section className="explore">
           <div className="container">
-            <Explore num={1} title="case title" image={Img1}></Explore>
-            <Explore num={2} title="case title" image={Img2}></Explore>
-            <Explore num={3} title="blog title" image={Img3}></Explore>
-            <Explore num={4} title="blog title" image={Img4}></Explore>
+            <Explore
+              num={1}
+              title="case title"
+              text={exploreText}
+              image={Img1}
+            ></Explore>
+            <Explore
+              num={2}
+              title="case title"
+              text={exploreText}
+              image={Img2}
+            ></Explore>
+            <Explore
+              num={3}
+              title="blog title"
+              text={exploreText}
+              image={Img3}
+            ></Explore>
+            <Explore
+              num={4}
+              title="blog title"
+              text={exploreText}
+              image={Img4}
+            ></Explore>
           </div>
         </section>
         <section className="quotes">
