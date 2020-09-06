@@ -7,7 +7,7 @@
     border-radius: 10px;
     transition: all 0.2s;
     backface-visibility: hidden; /* add to fix webkit bug jitter */
-    transform: translate3d(0, 0, 0); /* add to fix webkit bug jitter */
+    transform: perspective(1000px); /* add to fix webkit bug jitter */
 
     &:hover {
       transform: scale(1.015);
