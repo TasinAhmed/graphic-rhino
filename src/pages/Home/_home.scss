@@ -1,12 +1,35 @@
 .home {
+  .brand {
+    color: $color-primary-dark;
+    .container {
+      text-align: center;
+      padding: 15rem 5rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    &__message {
+      font-size: 2rem;
+    }
+  }
+
   .quotes {
     .container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       justify-items: center;
-      padding-top: 5rem;
-      padding-bottom: 5rem;
       column-gap: 2.5rem;
+      padding-bottom: 15rem;
+    }
+
+    .heading-2 {
+      grid-column: 1/-1;
+      margin-bottom: 2.5rem;
     }
   }
 
@@ -17,6 +40,7 @@
       grid-template-rows: 48.8rem 30rem;
       row-gap: 3rem;
       column-gap: 3rem;
+      padding-bottom: 15rem;
     }
   }
 }

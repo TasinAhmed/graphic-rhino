@@ -31,6 +31,16 @@ function Home() {
         link="/about"
       />
       <main>
+        <section className="brand">
+          <div className="container">
+            <div className="brand__title">Brand message here</div>
+            <div className="brand__message">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et{" "}
+            </div>
+          </div>
+        </section>
         <section className="explore">
           <div className="container">
             <Explore
@@ -61,6 +71,7 @@ function Home() {
         </section>
         <section className="quotes">
           <div className="container">
+            <h2 className="heading-2">Wat onze klanten zeggen</h2>
             <Quote name={name} text={quote} />
             <Quote name={name} text={quote} />
             <Quote name={name} text={quote} />
