@@ -8,6 +8,11 @@ import Img1 from "../../images/explore-1.png";
 import Img2 from "../../images/explore-2.png";
 import Img3 from "../../images/explore-3.png";
 import Img4 from "../../images/explore-4.png";
+import Ser1 from "../../images/service-1.png";
+import Ser2 from "../../images/service-2.png";
+import Ser3 from "../../images/service-3.png";
+import Ser4 from "../../images/service-4.png";
+import Service from "../../components/Service/Service";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
@@ -16,6 +21,7 @@ const quote = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.";
 const name = "John Doe";
 const exploreText =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim ante sed velit aliquet finibus.";
+const desc = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.";
 
 function Home() {
   return (
@@ -69,6 +75,11 @@ function Home() {
               text={exploreText}
               image={Img4}
             ></Explore>
+          </div>
+        </section>
+        <section className="service">
+          <div className="container">
+            <Service image={Ser1} name="Grafisch ontwerp" desc={desc} />
           </div>
         </section>
         <section className="quotes">
