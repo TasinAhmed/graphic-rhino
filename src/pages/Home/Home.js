@@ -33,11 +33,13 @@ function Home() {
       <main>
         <section className="brand">
           <div className="container">
-            <div className="brand__title">Brand message here</div>
-            <div className="brand__message">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et{" "}
+            <div className="brand__box">
+              <div className="brand__title">Brand message here</div>
+              <div className="brand__message">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et{" "}
+              </div>
             </div>
           </div>
         </section>
