@@ -26,7 +26,8 @@
       left: 50%;
       color: white;
       background-color: $color-primary;
-      transform: translate(-50%, -50%);
+      animation: pulsate 2s infinite;
+      transform-origin: left;
     }
 
     &__message {
