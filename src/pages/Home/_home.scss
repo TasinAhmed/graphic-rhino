@@ -1,6 +1,5 @@
 .home {
   .brand {
-    color: $color-primary-dark;
     .container {
       text-align: center;
       margin-top: 15rem;
@@ -9,7 +8,7 @@
 
     &__box {
       position: relative;
-      border: 5px solid $color-primary;
+      border: 5px solid black;
       padding: 5rem 5rem 3rem 5rem;
       width: 80%;
       margin: 0 auto;
@@ -25,7 +24,7 @@
       top: 0;
       left: 50%;
       color: white;
-      background-color: $color-primary;
+      background-color: black;
       animation: pulsate 2.5s infinite;
       transform-origin: left;
     }
