@@ -3,7 +3,6 @@ import Header from "../../components/Header/Header";
 import Background from "../../images/home.png";
 import { Helmet } from "react-helmet";
 import Quote from "../../components/Quote/Quote";
-import Explore from "../../components/Explore/Explore";
 import Img1 from "../../images/explore-1.png";
 import Img2 from "../../images/explore-2.png";
 import Img3 from "../../images/explore-3.png";
@@ -13,6 +12,7 @@ import Ser2 from "../../images/service-2.png";
 import Ser3 from "../../images/service-3.png";
 import Ser4 from "../../images/service-4.png";
 import Service from "../../components/Service/Service";
+import Explore from "../../components/Explore/Explore";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
@@ -49,7 +49,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="explore">
+        <section className="explores">
           <div className="container">
             <Explore
               num={1}
