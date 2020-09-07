@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
+import Logo from "../../images/logo-header.png";
 
 function Header({ image, title, text, btnText, link }) {
   return (
@@ -11,6 +12,7 @@ function Header({ image, title, text, btnText, link }) {
       }}
     >
       <div className="container">
+        <img src={Logo} className="header__logo" />
         <div className="header__content">
           <div className="header__text">
             <h1 className="header__title heading-1">{title}</h1>

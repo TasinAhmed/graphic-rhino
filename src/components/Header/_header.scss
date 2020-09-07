@@ -8,10 +8,21 @@
   .container {
     display: flex;
     align-items: center;
+    position: relative;
+  }
+
+  &__logo {
+    position: absolute;
+    height: 7rem;
+    top: 5rem;
+    left: 0;
+    transform: translateY(-50%);
   }
 
   &__content {
-    width: 48rem;
+    width: 60rem;
+    margin: 0 auto;
+    text-align: center;
   }
 
   &__title {

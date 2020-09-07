@@ -28,19 +28,27 @@ body {
 }
 
 .container {
-  width: 117rem;
-  margin: 0 auto;
+  max-width: 1320px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
   height: 100%;
-  padding-left: 3rem;
-  padding-right: 3rem;
+
+  @include respond(xl) {
+    max-width: 1140px;
+  }
 
   @include respond(lg) {
-    width: 97rem;
+    max-width: 960px;
   }
   @include respond(md) {
-    width: 75rem;
+    max-width: 720px;
   }
   @include respond(sm) {
+    max-width: 540px;
+  }
+  @include respond(xs) {
     width: 100%;
   }
 }
