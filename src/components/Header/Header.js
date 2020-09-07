@@ -12,7 +12,7 @@ function Header({ image, title, text, btnText, link }) {
       }}
     >
       <div className="container">
-        <img src={Logo} className="header__logo" />
+        <img src={Logo} className="header__logo" alt="Header logo" />
         <div className="header__content">
           <div className="header__text">
             <h1 className="header__title heading-1">{title}</h1>
