@@ -42,16 +42,36 @@ function Footer() {
 
         <div className="footer__social">
           <div className="footer__subtitle">volg ons</div>
-          <a href="/#" className="footer__link footer__item">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link footer__item"
+          >
             Facebook
           </a>
-          <a href="/#" className="footer__link footer__item">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link footer__item"
+          >
             Instagram
           </a>
-          <a href="/#" className="footer__link footer__item">
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link footer__item"
+          >
             Linkedin
           </a>
-          <a href="/#" className="footer__link footer__item">
+          <a
+            href="https://www.behance.net"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link footer__item"
+          >
             Behance
           </a>
         </div>
