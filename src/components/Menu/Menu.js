@@ -1,14 +1,11 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../../images/logo-menu.png";
 
 function Menu() {
   const closeMenu = () => {
     document.getElementById("menu-btn").click();
   };
-
-  let location = useLocation();
-  console.log(location.pathname);
 
   return (
     <div className="menu">
@@ -22,27 +19,56 @@ function Menu() {
             <img className="menu__logo" src={Logo} alt="Menu Logo" />
             <div className="menu__nav">
               <ul className="menu__list">
-                <Link to="/" onClick={closeMenu}>
-                  <li className="active">Home</li>
-                </Link>
-                <Link to="/about" onClick={closeMenu}>
+                <NavLink
+                  exact
+                  to="/"
+                  activeClassName="active"
+                  onClick={closeMenu}
+                >
+                  <li>Home</li>
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  activeClassName="active"
+                  onClick={closeMenu}
+                >
                   <li>Over ons</li>
-                </Link>
-                <Link to="/diensten" onClick={closeMenu}>
+                </NavLink>
+                <NavLink
+                  to="/diensten"
+                  activeClassName="active"
+                  onClick={closeMenu}
+                >
                   <li>Diensten</li>
-                </Link>
-                <Link to="/cases" onClick={closeMenu}>
+                </NavLink>
+                <NavLink
+                  to="/cases"
+                  activeClassName="active"
+                  onClick={closeMenu}
+                >
                   <li>Cases</li>
-                </Link>
-                <Link to="/blog" onClick={closeMenu}>
+                </NavLink>
+                <NavLink
+                  to="/blog"
+                  activeClassName="active"
+                  onClick={closeMenu}
+                >
                   <li>Blog</li>
-                </Link>
-                <Link to="/graveyard" onClick={closeMenu}>
+                </NavLink>
+                <NavLink
+                  to="/graveyard"
+                  activeClassName="active"
+                  onClick={closeMenu}
+                >
                   <li>Graveyard</li>
-                </Link>
-                <Link to="/contact" onClick={closeMenu}>
+                </NavLink>
+                <NavLink
+                  to="/contact"
+                  activeClassName="active"
+                  onClick={closeMenu}
+                >
                   <li>Contact</li>
-                </Link>
+                </NavLink>
               </ul>
             </div>
           </div>
