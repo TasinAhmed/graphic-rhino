@@ -7,6 +7,14 @@
       row-gap: 2.5rem;
       padding-top: 7.5rem;
       padding-bottom: 7.5rem;
+
+      @include respond(sm) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include respond(xs) {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 }

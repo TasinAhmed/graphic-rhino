@@ -22,7 +22,7 @@ function Contact() {
             <MapWithAMarker
               googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi31TdptmmtjtJbOeX3sts18QAJq7F2ZQ&v=3.exp&libraries=geometry,drawing,places"
               loadingElement={<div style={{ height: `100%` }} />}
-              containerElement={<div style={{ height: `400px` }} />}
+              containerElement={<div className="map" />}
               mapElement={<div style={{ height: `100%` }} />}
               lat={50.7558602}
               lng={3.4277491}

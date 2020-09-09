@@ -32,11 +32,17 @@
       row-gap: 2.5rem;
       padding-top: 7.5rem;
       padding-bottom: 15rem;
+
+      @include respond(sm) {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 10rem;
+      }
     }
 
     .heading-2 {
       grid-column: 1/-1;
       margin-bottom: 2.5rem;
+      text-align: center;
     }
   }
 
@@ -48,6 +54,16 @@
       row-gap: 3rem;
       column-gap: 3rem;
       padding-bottom: 7.5rem;
+
+      @include respond(md) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+
+      @include respond(sm) {
+        grid-template-columns: 1fr;
+        padding-bottom: 5rem;
+      }
     }
   }
 
@@ -55,10 +71,18 @@
     .container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
       padding-top: 7.5rem;
       padding-bottom: 7.5rem;
       column-gap: 2.5rem;
       row-gap: 2.5rem;
+      text-align: center;
+
+      @include respond(sm) {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
     }
   }
 }

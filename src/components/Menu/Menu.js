@@ -9,69 +9,44 @@ function Menu() {
 
   return (
     <div className="menu">
-      <div className="container">
-        <input type="checkbox" className="menu__checkbox" id="menu-checkbox" />
-        <label for="menu-checkbox" className="menu__btn" id="menu-btn">
-          <div className="menu__icon"></div>
-        </label>
-        <div className="menu__background">
-          <div className="container">
-            <img className="menu__logo" src={Logo} alt="Menu Logo" />
-            <div className="menu__nav">
-              <ul className="menu__list">
-                <NavLink
-                  exact
-                  to="/"
-                  activeClassName="active"
-                  onClick={closeMenu}
-                >
-                  <li>Home</li>
-                </NavLink>
-                <NavLink
-                  to="/about"
-                  activeClassName="active"
-                  onClick={closeMenu}
-                >
-                  <li>Over ons</li>
-                </NavLink>
-                <NavLink
-                  to="/diensten"
-                  activeClassName="active"
-                  onClick={closeMenu}
-                >
-                  <li>Diensten</li>
-                </NavLink>
-                <NavLink
-                  to="/cases"
-                  activeClassName="active"
-                  onClick={closeMenu}
-                >
-                  <li>Cases</li>
-                </NavLink>
-                <NavLink
-                  to="/blog"
-                  activeClassName="active"
-                  onClick={closeMenu}
-                >
-                  <li>Blog</li>
-                </NavLink>
-                <NavLink
-                  to="/graveyard"
-                  activeClassName="active"
-                  onClick={closeMenu}
-                >
-                  <li>Graveyard</li>
-                </NavLink>
-                <NavLink
-                  to="/contact"
-                  activeClassName="active"
-                  onClick={closeMenu}
-                >
-                  <li>Contact</li>
-                </NavLink>
-              </ul>
-            </div>
-          </div>
+      <input type="checkbox" className="menu__checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" className="menu__btn" id="menu-btn">
+        <div className="menu__icon"></div>
+      </label>
+      <div className="menu__background">
+        <img className="menu__logo" src={Logo} alt="Menu Logo" />
+        <div className="menu__nav">
+          <ul className="menu__list">
+            <NavLink exact to="/" activeClassName="active" onClick={closeMenu}>
+              <li>Home</li>
+            </NavLink>
+            <NavLink to="/about" activeClassName="active" onClick={closeMenu}>
+              <li>Over ons</li>
+            </NavLink>
+            <NavLink
+              to="/diensten"
+              activeClassName="active"
+              onClick={closeMenu}
+            >
+              <li>Diensten</li>
+            </NavLink>
+            <NavLink to="/cases" activeClassName="active" onClick={closeMenu}>
+              <li>Cases</li>
+            </NavLink>
+            <NavLink to="/blog" activeClassName="active" onClick={closeMenu}>
+              <li>Blog</li>
+            </NavLink>
+            <NavLink
+              to="/graveyard"
+              activeClassName="active"
+              onClick={closeMenu}
+            >
+              <li>Graveyard</li>
+            </NavLink>
+            <NavLink to="/contact" activeClassName="active" onClick={closeMenu}>
+              <li>Contact</li>
+            </NavLink>
+          </ul>
         </div>
       </div>
     </div>

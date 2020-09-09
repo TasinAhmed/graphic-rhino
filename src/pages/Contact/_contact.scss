@@ -9,6 +9,19 @@
     align-items: center;
     padding-top: 10rem;
     padding-bottom: 10rem;
+
+    .map {
+      height: 40rem;
+
+      @include respond(sm) {
+        margin-bottom: 5rem;
+      }
+    }
+
+    @include respond(sm) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
   }
 
   .form {

@@ -17,11 +17,18 @@
 
   &__desc {
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 2;
+
+    @include respond(sm) {
+      line-height: 1.2;
+    }
   }
 
   &--hover:hover {
     transform: scale(1.1);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    @include respond(sm) {
+      transform: scale(1.01);
+    }
   }
 }
