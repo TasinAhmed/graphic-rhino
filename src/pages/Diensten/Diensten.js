@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/diensten.png";
 import { Helmet } from "react-helmet";
@@ -15,8 +15,9 @@ const text =
 const desc = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.";
 
 function Diensten() {
+  const myRef = useRef(null);
   return (
-    <div className="diensten">
+    <>
       <Helmet>
         <title>Graphic Rhino | Diensten</title>
       </Helmet>
@@ -26,8 +27,9 @@ function Diensten() {
         text={text}
         btnText="contacteer ons"
         link="/contact"
+        scrollTo={myRef}
       />
-      <main>
+      <main className="diensten" ref={myRef}>
         <section className="services">
           <div className="container">
             <Service image={Ser1} name="Grafisch ontwerp" desc={desc} />
@@ -45,7 +47,7 @@ function Diensten() {
           </div>
         </section>
       </main>
-    </div>
+    </>
   );
 }
 

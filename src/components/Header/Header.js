@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import ScrollBtn from "../ScrollBtn/ScrollBtn";
 
-function Header({ image, title, text, btnText, link }) {
+function Header({ image, title, text, btnText, link, scrollTo }) {
   return (
     <header
       className="header"
@@ -23,7 +23,7 @@ function Header({ image, title, text, btnText, link }) {
             </Link>
           )}
         </div>
-        <ScrollBtn />
+        <ScrollBtn scrollTo={scrollTo} />
       </div>
     </header>
   );

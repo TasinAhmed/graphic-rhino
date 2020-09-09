@@ -1,0 +1,16 @@
+@keyframes scrollDown {
+  0% {
+    top: 1.75rem;
+    opacity: 1;
+  }
+
+  95% {
+    top: 4rem;
+    opacity: 0;
+  }
+
+  100% {
+    top: 1.75rem;
+    opacity: 0;
+  }
+}

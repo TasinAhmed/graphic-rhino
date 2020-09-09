@@ -6,6 +6,17 @@
     font-size: 2rem;
   }
 
+  @include respond(xs) {
+    &__social,
+    &__about {
+      width: 9.3rem;
+    }
+    &__contact,
+    &__legal {
+      width: 21rem;
+    }
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -21,6 +32,7 @@
 
     @include respond(xs) {
       text-align: left;
+      justify-items: center;
     }
   }
 

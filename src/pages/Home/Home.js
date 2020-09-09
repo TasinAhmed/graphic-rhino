@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/home.png";
 import { Helmet } from "react-helmet";
@@ -24,8 +24,9 @@ const exploreText =
 const desc = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.";
 
 function Home() {
+  const myRef = useRef(null);
   return (
-    <div className="home">
+    <>
       <Helmet>
         <title>Graphic Rhino | Home</title>
       </Helmet>
@@ -35,8 +36,9 @@ function Home() {
         text={text}
         btnText="over ons"
         link="/about"
+        scrollTo={myRef}
       />
-      <main>
+      <main className="home" ref={myRef}>
         <section className="brand">
           <div className="container">
             <div className="brand__box">
@@ -105,7 +107,7 @@ function Home() {
           </div>
         </section>
       </main>
-    </div>
+    </>
   );
 }
 

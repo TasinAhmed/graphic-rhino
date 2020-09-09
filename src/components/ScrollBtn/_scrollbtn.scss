@@ -1,6 +1,23 @@
 .scroll-btn {
-  width: 4rem;
+  position: absolute;
+  width: 4.5rem;
   height: 7rem;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 100px;
+  cursor: pointer;
+
+  &__dot {
+    position: absolute;
+    background-color: white;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 1.75rem;
+
+    animation-name: scrollDown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
 }

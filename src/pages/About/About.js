@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/about.png";
 import { Helmet } from "react-helmet";
@@ -8,8 +8,9 @@ const text =
   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.";
 
 function About() {
+  const myRef = useRef(null);
   return (
-    <div className="about">
+    <>
       <Helmet>
         <title>Graphic Rhino | About</title>
       </Helmet>
@@ -19,8 +20,10 @@ function About() {
         text={text}
         btnText="contacteer ons"
         link="/contact"
+        scrollTo={myRef}
       />
-    </div>
+      <main className="about" id="about" ref={myRef}></main>
+    </>
   );
 }
 

@@ -1,9 +1,12 @@
 import React from "react";
 
-function ScrollBtn() {
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
+function ScrollBtn({ scrollTo }) {
+  const executeScroll = () => scrollToRef(scrollTo);
   return (
-    <div className="scroll-btn">
-      <span className="scroll-btn__dot"></span>
+    <div onClick={executeScroll} className="scroll-btn">
+      <div className="scroll-btn__dot"></div>
     </div>
   );
 }
