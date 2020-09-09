@@ -20,13 +20,7 @@
     }
 
     @include respond(xs) {
-      display: flex;
-      flex-direction: column;
-      row-gap: 0;
-
-      & > * {
-        margin-bottom: 5rem;
-      }
+      text-align: left;
     }
   }
 

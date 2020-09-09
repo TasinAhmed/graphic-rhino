@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
+import ScrollBtn from "../ScrollBtn/ScrollBtn";
 
 function Header({ image, title, text, btnText, link }) {
   return (
@@ -22,6 +23,7 @@ function Header({ image, title, text, btnText, link }) {
             </Link>
           )}
         </div>
+        <ScrollBtn />
       </div>
     </header>
   );
