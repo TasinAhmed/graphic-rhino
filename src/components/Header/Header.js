@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import ScrollBtn from "../ScrollBtn/ScrollBtn";
+import Logo from "../../images/logo-header.png";
 
 function Header({ image, title, text, btnText, link, scrollTo }) {
   return (
@@ -11,6 +12,7 @@ function Header({ image, title, text, btnText, link, scrollTo }) {
         backgroundImage: `linear-gradient(to right bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(${image})`,
       }}
     >
+      <img src={Logo} className="header__logo" alt="Graphic Rhino"></img>
       <div className="container">
         <div className="header__content">
           <div className="header__text">

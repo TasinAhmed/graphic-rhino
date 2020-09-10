@@ -1,9 +1,18 @@
 .header {
+  position: relative;
   height: 80rem;
   background-color: red;
   background-position: center;
   background-size: cover;
   color: $color-white;
+
+  &__logo {
+    position: absolute;
+    height: 7rem;
+    top: 6rem;
+    transform: translateY(-50%);
+    left: 3rem;
+  }
 
   .scroll-btn {
     bottom: 4rem;
@@ -19,6 +28,8 @@
 
   &__content {
     width: 60rem;
+    text-align: center;
+    margin: 0 auto;
   }
 
   &__title {
