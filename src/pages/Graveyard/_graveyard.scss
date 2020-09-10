@@ -1,2 +1,19 @@
 .graveyard {
+  .container {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+
+    @include respond(xs) {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+  }
+
+  .case:not(:last-child) {
+    margin-bottom: 5rem;
+
+    @include respond(xs) {
+      margin-bottom: 7rem;
+    }
+  }
 }

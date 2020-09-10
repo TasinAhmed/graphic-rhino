@@ -3,7 +3,6 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    border: 1px solid lightgray;
     border-radius: 10px;
     transition: all 0.2s;
     backface-visibility: hidden; /* add to fix webkit bug jitter */
