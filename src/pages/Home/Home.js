@@ -13,6 +13,7 @@ import Ser3 from "../../images/service-3.png";
 import Ser4 from "../../images/service-4.png";
 import Service from "../../components/Service/Service";
 import Explore from "../../components/Explore/Explore";
+import TextBlock from "../../components/TextBlock/TextBlock";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
@@ -22,6 +23,8 @@ const name = "John Doe";
 const exploreText =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim ante sed velit aliquet finibus.";
 const desc = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.";
+const content =
+  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
 
 function Home() {
   const myRef = useRef(null);
@@ -77,6 +80,14 @@ function Home() {
               text={exploreText}
               image={Img4}
             ></Explore>
+          </div>
+        </section>
+        <section className="textBlock">
+          <div className="container">
+            <TextBlock
+              title="Betaalbare designs/waarom Graphic Rhino"
+              content={content}
+            />
           </div>
         </section>
         <section className="services">
