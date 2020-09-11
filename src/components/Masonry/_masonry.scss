@@ -1,0 +1,102 @@
+.masonry {
+  column-count: 4;
+  column-gap: 1rem;
+  padding: 5rem 0;
+
+  @include respond(md) {
+    column-count: 3;
+  }
+
+  @include respond(sm) {
+    column-count: 2;
+  }
+
+  &__block {
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $color-primary;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: calc(100% - 1rem);
+    max-height: calc(100% - 1rem);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+    &::after,
+    &::before {
+      content: "";
+      transition: all 0.3s;
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      visibility: hidden;
+    }
+
+    &::after {
+      left: -3px;
+      top: -3px;
+      border-top: 3px solid white;
+      border-left: 3px solid white;
+    }
+
+    &::before {
+      right: -3px;
+      bottom: -3px;
+      border-right: 3px solid white;
+      border-bottom: 3px solid white;
+    }
+  }
+
+  &__text {
+    height: 100%;
+    width: 100%;
+    transform: scaleY(0);
+    transition: all 0.3s;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__block:hover &__cover {
+    opacity: 0.8;
+  }
+
+  &__block:hover &__content::after,
+  &__block:hover &__content::before {
+    visibility: visible;
+    width: calc(100% + 13px);
+    height: calc(100% + 13px);
+  }
+
+  &__block:hover &__text {
+    transform: scaleY(1);
+  }
+}

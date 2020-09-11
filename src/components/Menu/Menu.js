@@ -10,7 +10,7 @@ function Menu() {
   return (
     <div className="menu">
       <input type="checkbox" className="menu__checkbox" id="menu-checkbox" />
-      <label for="menu-checkbox" className="menu__btn" id="menu-btn">
+      <label htmlFor="menu-checkbox" className="menu__btn" id="menu-btn">
         <div className="menu__icon"></div>
       </label>
       <div className="menu__background">

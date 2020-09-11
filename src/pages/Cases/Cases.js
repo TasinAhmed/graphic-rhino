@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/cases.png";
 import { Helmet } from "react-helmet";
+import Masonry from "../../components/Masonry/Masonry";
+import Images from "./Images";
 
 const title = "Wat wij bieden";
 const text =
@@ -22,7 +24,11 @@ function Cases() {
         link="/contact"
         scrollTo={myRef}
       />
-      <main className="cases" ref={myRef}></main>
+      <main className="cases" ref={myRef}>
+        <div className="container">
+          <Masonry images={Images} />
+        </div>
+      </main>
     </>
   );
 }
