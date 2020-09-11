@@ -47,6 +47,7 @@
       &:placeholder-shown + .form__label {
         transform: translateY(-4rem);
         opacity: 0;
+        visibility: hidden;
       }
     }
 
@@ -62,7 +63,6 @@
     &__label {
       font-size: 1.6rem;
       margin-left: 2rem;
-      opacity: 1;
       display: block;
       transition: all 0.3s;
     }
