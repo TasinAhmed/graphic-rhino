@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
-import Background from "../../images/about.png";
+import Background from "../../images/about.jpg";
 import { Helmet } from "react-helmet";
 import TextBlock from "../../components/TextBlock/TextBlock";
+import Image from "../../images/explore-1.jpg";
 
 const title = "Nice to meet you";
 const text =
@@ -28,9 +29,13 @@ function About() {
       <main className="about" id="about" ref={myRef}>
         <div className="container">
           <TextBlock title="reclamebureau" content={text2} />
-          <div className="about__img"></div>
+          <div className="about__img">
+            <img src={Image} alt="About" />
+          </div>
           <TextBlock title="name" content={text2} />
-          <div className="about__img"></div>
+          <div className="about__img">
+            <img src={Image} alt="About" />
+          </div>
           <TextBlock title="beliefs" content={text2} />
         </div>
       </main>

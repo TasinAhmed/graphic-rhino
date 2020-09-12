@@ -18,6 +18,11 @@
     overflow: hidden;
     border-radius: 10px;
     position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
   }
 
   &__img {

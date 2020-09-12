@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
-import Background from "../../images/cases.png";
+import Background from "../../images/cases.jpg";
 import { Helmet } from "react-helmet";
 import Masonry from "../../components/Masonry/Masonry";
 import Images from "./Images";

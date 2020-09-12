@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
-import Background from "../../images/home.png";
+import Background from "../../images/home.jpg";
 import { Helmet } from "react-helmet";
 import Quote from "../../components/Quote/Quote";
-import Img1 from "../../images/explore-1.png";
-import Img2 from "../../images/explore-2.png";
-import Img3 from "../../images/explore-3.png";
-import Img4 from "../../images/explore-4.png";
+import Img1 from "../../images/explore-1.jpg";
+import Img2 from "../../images/explore-2.jpg";
+import Img3 from "../../images/explore-3.jpg";
+import Img4 from "../../images/explore-4.jpg";
 import Ser1 from "../../images/service-1.png";
 import Ser2 from "../../images/service-2.png";
 import Ser3 from "../../images/service-3.png";

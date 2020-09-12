@@ -7,7 +7,7 @@ function Explore({ num, title, text, image }) {
       <div
         className="explore__img"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)),url(${image})`,
+          backgroundImage: `linear-gradient(to right bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(${image})`,
         }}
       ></div>
       <div className="explore__content">

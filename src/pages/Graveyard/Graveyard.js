@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
-import Background from "../../images/graveyard.png";
+import Background from "../../images/graveyard.jpg";
 import { Helmet } from "react-helmet";
 import Case from "../../components/Case/Case";
-import Image from "../../images/explore-1.png";
+import Image from "../../images/explore-1.jpg";
 
 const title = "Design graveyard";
 const text =

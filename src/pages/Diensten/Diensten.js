@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
-import Background from "../../images/diensten.png";
+import Background from "../../images/diensten.jpg";
 import { Helmet } from "react-helmet";
 import Ser1 from "../../images/service-1.png";
 import Ser2 from "../../images/service-2.png";
