@@ -20,7 +20,6 @@
     position: relative;
     transition: all 0.3s;
 
-    &:hover,
     &:active {
       transform: scale(1.01);
     }
@@ -91,13 +90,10 @@
     font-weight: bold;
   }
 
-  &__block:hover &__cover,
   &__block:active &__cover {
     opacity: 0.8;
   }
 
-  &__block:hover &__content::after,
-  &__block:hover &__content::before,
   &__block:active &__content::after,
   &__block:active &__content::before {
     visibility: visible;
@@ -105,7 +101,6 @@
     height: calc(100% + 13px);
   }
 
-  &__block:hover &__text,
   &__block:active &__text {
     transform: scaleY(1);
   }
