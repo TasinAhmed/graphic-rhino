@@ -12,7 +12,9 @@ function Header({ image, title, text, btnText, link, scrollTo }) {
         backgroundImage: `linear-gradient(to right bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(${image})`,
       }}
     >
-      <img src={Logo} className="header__logo" alt="Graphic Rhino"></img>
+      <Link to="/">
+        <img src={Logo} className="header__logo" alt="Graphic Rhino"></img>
+      </Link>
       <div className="container">
         <div className="header__content">
           <div className="header__text">
