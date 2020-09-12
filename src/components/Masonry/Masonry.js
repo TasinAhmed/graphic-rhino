@@ -4,7 +4,7 @@ function Masonry({ images }) {
   const items = [];
   for (const x of images) {
     items.push(
-      <div className="masonry__block">
+      <div className="masonry__block" onClick="">
         <img className="masonry__img" alt="Grid Item" src={x.url} />
         <div className="masonry__cover"></div>
         <div className="masonry__content">
