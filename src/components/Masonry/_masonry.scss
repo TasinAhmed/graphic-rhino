@@ -59,7 +59,6 @@
       position: absolute;
       width: 3px;
       height: 3px;
-      visibility: hidden;
     }
 
     &::after {
@@ -96,7 +95,6 @@
 
   &__block:hover &__content::after,
   &__block:hover &__content::before {
-    visibility: visible;
     width: calc(100% + 13px);
     height: calc(100% + 13px);
   }
