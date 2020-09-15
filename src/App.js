@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Graveyard from "./pages/Graveyard/Graveyard";
 import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./ScrollToTop";
+import ExampleBlog from "./pages/ExampleBlog/ExampleBlog";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/blog" component={Blog} />
           <Route path="/graveyard" component={Graveyard} />
           <Route path="/contact" component={Contact} />
+          <Route path="/example-blog" component={ExampleBlog} />
         </Switch>
         <Footer />
       </div>
