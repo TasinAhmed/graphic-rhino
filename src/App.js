@@ -12,6 +12,7 @@ import Graveyard from "./pages/Graveyard/Graveyard";
 import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./ScrollToTop";
 import ExampleBlog from "./pages/ExampleBlog/ExampleBlog";
+import ExampleCase from "./pages/ExampleCase/ExampleCase";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/graveyard" component={Graveyard} />
           <Route path="/contact" component={Contact} />
           <Route path="/example-blog" component={ExampleBlog} />
+          <Route path="/example-case" component={ExampleCase} />
         </Switch>
         <Footer />
       </div>

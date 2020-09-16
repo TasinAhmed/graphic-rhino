@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../images/logo-menu.png";
 
 function Menu() {
@@ -14,7 +14,9 @@ function Menu() {
         <div className="menu__icon"></div>
       </label>
       <div className="menu__background">
-        <img className="menu__logo" src={Logo} alt="Menu Logo" />
+        <Link to="/">
+          <img className="menu__logo" src={Logo} alt="Menu Logo" />
+        </Link>
         <div className="menu__nav">
           <ul className="menu__list">
             <NavLink exact to="/" activeClassName="active" onClick={closeMenu}>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../images/logo.png";
+import { FaFacebook, FaInstagram, FaLinkedin, FaBehance } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -10,6 +11,36 @@ function Footer() {
           <div className="footer__logo-content">
             <img src={Logo} className="footer__logo" alt="Graphic Rhino Logo" />
             <div className="footer__slogan">take design by its horns</div>
+            <div className="footer__icons">
+              <a
+                href="https://www.facebook.com/GraphicRhino/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook size={24} />
+              </a>
+              <a
+                href="https://www.instagram.com/graphic_rhino/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram size={24} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/graphicrhino/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={24} />
+              </a>
+              <a
+                href="https://www.behance.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaBehance size={24} target="_blank" />
+              </a>
+            </div>
           </div>
           <div className="footer__copyright">&copy; 2020 Graphic Rhino</div>
         </div>
@@ -38,42 +69,6 @@ function Footer() {
             Doorniksesteenweg 344 <br /> 8582 Outrijve
           </div>
           <div className="footer__item">BTW BE 0687 610 927</div>
-        </div>
-
-        <div className="footer__social">
-          <div className="footer__subtitle">volg ons</div>
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer__link footer__item"
-          >
-            Facebook
-          </a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer__link footer__item"
-          >
-            Instagram
-          </a>
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer__link footer__item"
-          >
-            Linkedin
-          </a>
-          <a
-            href="https://www.behance.net"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer__link footer__item"
-          >
-            Behance
-          </a>
         </div>
 
         <div className="footer__legal">
