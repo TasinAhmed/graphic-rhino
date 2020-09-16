@@ -9,11 +9,15 @@
     }
   }
 
-  .case:not(:last-child) {
-    margin-bottom: 5rem;
+  .case {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 
-    @include respond(xs) {
-      margin-bottom: 7rem;
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+
+      @include respond(xs) {
+        margin-bottom: 7rem;
+      }
     }
   }
 }

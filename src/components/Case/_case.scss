@@ -3,10 +3,17 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 5rem;
   align-items: center;
+  padding-left: 5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s;
 
-  @include respond(xs) {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &--mirror {
+    padding-left: 0;
   }
 
   &--mirror &__img {
@@ -26,6 +33,7 @@
 
   &__img {
     height: 50rem;
+    display: block;
     background-position: center;
     background-size: cover;
 
@@ -56,5 +64,11 @@
 
   .btn {
     font-size: 2rem;
+  }
+
+  @include respond(xs) {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 5rem;
   }
 }

@@ -10,14 +10,8 @@ function Masonry({ images }) {
           <img className="masonry__img" alt="Grid Item" src={x.url} />
           <div className="masonry__cover"></div>
           <div className="masonry__content">
-            <div className="masonry__bar masonry__bar--1"></div>
-            <div className="masonry__bar masonry__bar--2"></div>
-            <div className="masonry__text">
-              <div className="masonry__title">{x.title}</div>
-              <div className="masonry__desc">{x.desc}</div>
-            </div>
-            <div className="masonry__bar masonry__bar--3"></div>
-            <div className="masonry__bar masonry__bar--4"></div>
+            <div className="masonry__title">{x.title}</div>
+            <div className="masonry__text">{x.desc}</div>
           </div>
         </div>
       </Link>

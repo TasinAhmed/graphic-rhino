@@ -2,7 +2,7 @@ const Images = [
   {
     url:
       "https://images.unsplash.com/photo-1599687350916-a8be7f9b68f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-    title: "blog title",
+    title: "very very long blog title",
     desc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim.",
     linkTo: "/example-blog",
