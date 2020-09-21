@@ -35,6 +35,7 @@ function Contact() {
                   required
                   type="text"
                   placeholder="Naam + achternaam*"
+                  pattern="[a-zA-Z][a-zA-Z\s]*"
                   id="name"
                 />
                 <label className="form__label" for="name">
@@ -59,6 +60,7 @@ function Contact() {
                   required
                   type="tel"
                   placeholder="Telefoonnummer"
+                  pattern="\d+"
                   id="phone"
                 />
                 <label className="form__label" for="phone">
@@ -69,7 +71,7 @@ function Contact() {
                 <input
                   className="form__input"
                   required
-                  type="email"
+                  type="text"
                   placeholder="Bericht"
                   id="report"
                 />
@@ -78,7 +80,9 @@ function Contact() {
                 </label>
               </div>
 
-              <Button btnText="verzenden" />
+              <button type="submit" className="btn">
+                verzenden
+              </button>
             </form>
           </div>
         </section>
