@@ -10,6 +10,7 @@ const text =
 
 function Contact() {
   const myRef = useRef(null);
+
   return (
     <>
       <Helmet>
