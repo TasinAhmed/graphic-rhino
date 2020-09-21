@@ -68,6 +68,7 @@ function Home() {
               image={Img1}
               anim="zoom-in"
               dur={500}
+              anchor="top-bottom"
             ></Explore>
             <Explore
               num={2}
@@ -76,7 +77,7 @@ function Home() {
               image={Img2}
               anim="zoom-in"
               dur={500}
-              del={200}
+              anchor="top-bottom"
             ></Explore>
             <Explore
               num={3}
@@ -85,7 +86,7 @@ function Home() {
               image={Img3}
               anim="zoom-in"
               dur={500}
-              del={400}
+              anchor="top-bottom"
             ></Explore>
             <Explore
               num={4}
@@ -94,7 +95,7 @@ function Home() {
               image={Img4}
               anim="zoom-in"
               dur={500}
-              del={600}
+              anchor="top-bottom"
             ></Explore>
           </div>
         </section>

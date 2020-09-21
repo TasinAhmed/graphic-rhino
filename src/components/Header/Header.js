@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
-import ScrollBtn from "../ScrollBtn/ScrollBtn";
 import Logo from "../../images/logo-header.png";
 
 function Header({ image, title, text, btnText, link, scrollTo }) {
@@ -27,7 +26,6 @@ function Header({ image, title, text, btnText, link, scrollTo }) {
             </Link>
           )}
         </div>
-        <ScrollBtn scrollTo={scrollTo} />
       </div>
     </header>
   );
