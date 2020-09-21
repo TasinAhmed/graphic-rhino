@@ -66,7 +66,7 @@ function Home() {
               title="case title"
               text={exploreText}
               image={Img1}
-              anim="fade-right"
+              anim="zoom-in"
               dur={500}
             ></Explore>
             <Explore
@@ -74,7 +74,7 @@ function Home() {
               title="case title"
               text={exploreText}
               image={Img2}
-              anim="fade-down"
+              anim="zoom-in"
               dur={500}
               del={200}
             ></Explore>
@@ -83,7 +83,7 @@ function Home() {
               title="blog title"
               text={exploreText}
               image={Img3}
-              anim="fade-up"
+              anim="zoom-in"
               dur={500}
               del={400}
             ></Explore>
@@ -92,7 +92,7 @@ function Home() {
               title="blog title"
               text={exploreText}
               image={Img4}
-              anim="fade-up"
+              anim="zoom-in"
               dur={500}
               del={600}
             ></Explore>
