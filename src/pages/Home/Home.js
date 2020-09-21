@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/home.jpg";
 import { Helmet } from "react-helmet";
@@ -14,6 +14,8 @@ import Ser4 from "../../images/service-4.png";
 import Service from "../../components/Service/Service";
 import Explore from "../../components/Explore/Explore";
 import TextBlock from "../../components/TextBlock/TextBlock";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
@@ -28,6 +30,9 @@ const content =
 
 function Home() {
   const myRef = useRef(null);
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true, anchorPlacement: "center-bottom" });
+  }, []);
   return (
     <>
       <Helmet>
@@ -43,7 +48,7 @@ function Home() {
       />
       <main className="home" ref={myRef}>
         <section className="brand">
-          <div className="container">
+          <div data-aos="fade-right" className="container">
             <div className="brand__box">
               <div className="brand__title">Brand message here</div>
               <div className="brand__message">
@@ -61,29 +66,40 @@ function Home() {
               title="case title"
               text={exploreText}
               image={Img1}
+              anim="fade-right"
+              dur={500}
             ></Explore>
             <Explore
               num={2}
               title="case title"
               text={exploreText}
               image={Img2}
+              anim="fade-down"
+              dur={500}
+              del={200}
             ></Explore>
             <Explore
               num={3}
               title="blog title"
               text={exploreText}
               image={Img3}
+              anim="fade-up"
+              dur={500}
+              del={400}
             ></Explore>
             <Explore
               num={4}
               title="blog title"
               text={exploreText}
               image={Img4}
+              anim="fade-up"
+              dur={500}
+              del={600}
             ></Explore>
           </div>
         </section>
         <section className="textBlock">
-          <div className="container">
+          <div data-aos="fade-left" className="container">
             <TextBlock
               title="Betaalbare designs/waarom Graphic Rhino"
               content={content}
@@ -97,24 +113,63 @@ function Home() {
               name="Grafisch ontwerp"
               desc={desc}
               hover={true}
+              anim="zoom-in"
+              dur={500}
             />
-            <Service image={Ser2} name="Drukwerk" desc={desc} hover={true} />
-            <Service image={Ser3} name="Animaties" desc={desc} hover={true} />
+            <Service
+              image={Ser2}
+              name="Drukwerk"
+              desc={desc}
+              hover={true}
+              anim="zoom-in"
+              dur={500}
+              del={200}
+            />
+            <Service
+              image={Ser3}
+              name="Animaties"
+              desc={desc}
+              hover={true}
+              anim="zoom-in"
+              dur={500}
+              del={400}
+            />
             <Service
               image={Ser4}
               name="Online marketing"
               desc={desc}
               hover={true}
+              anim="zoom-in"
+              dur={500}
+              del={600}
             />
           </div>
         </section>
         <section className="quotes">
           <div className="container">
             <h2 className="heading-2">Wat onze klanten zeggen</h2>
-            <Quote name={name} text={quote} />
-            <Quote name={name} text={quote} />
-            <Quote name={name} text={quote} />
-            <Quote name={name} text={quote} />
+            <Quote name={name} text={quote} anim="zoom-in" dur={500} />
+            <Quote
+              name={name}
+              text={quote}
+              anim="zoom-in"
+              dur={500}
+              del={200}
+            />
+            <Quote
+              name={name}
+              text={quote}
+              anim="zoom-in"
+              dur={500}
+              del={400}
+            />
+            <Quote
+              name={name}
+              text={quote}
+              anim="zoom-in"
+              dur={500}
+              del={600}
+            />
           </div>
         </section>
       </main>
