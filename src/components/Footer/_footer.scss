@@ -82,4 +82,25 @@
       justify-content: center;
     }
   }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__about &__link {
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: $color-primary;
+      transition: all 0.2s;
+      margin-bottom: -2px;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }

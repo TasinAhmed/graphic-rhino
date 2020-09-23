@@ -28,7 +28,7 @@ function Contact() {
               lat={50.7558602}
               lng={3.4277491}
             />
-            <form className="form">
+            <form className="form" data-aos="zoom-in" data-aos-duration="500">
               <div className="form__group">
                 <input
                   className="form__input"

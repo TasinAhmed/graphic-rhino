@@ -144,46 +144,6 @@ const Images = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim.",
     linkTo: "/example-blog",
   },
-  {
-    url:
-      "https://images.unsplash.com/photo-1599813405394-863bf27e1a32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=649&q=80",
-    title: "blog title",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim.",
-    linkTo: "/example-blog",
-  },
-  {
-    url:
-      "https://images.unsplash.com/photo-1599826892560-268f52bc2c05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-    title: "blog title",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim.",
-    linkTo: "/example-blog",
-  },
-  {
-    url:
-      "https://images.unsplash.com/photo-1599765625246-5c661338b722?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=717&q=80",
-    title: "blog title",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim.",
-    linkTo: "/example-blog",
-  },
-  {
-    url:
-      "https://images.unsplash.com/photo-1599687349533-82f24a0b62cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-    title: "blog title",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim.",
-    linkTo: "/example-blog",
-  },
-  {
-    url:
-      "https://images.unsplash.com/photo-1599841934376-1896a80aeace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-    title: "blog title",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim.",
-    linkTo: "/example-blog",
-  },
 ];
 
 export default Images;

@@ -28,12 +28,45 @@ function Graveyard() {
       />
       <main className="graveyard" ref={myRef}>
         <div className="container">
-          <Case image={Image} title="Case title" desc={desc} />
-          <Case image={Image} mirror={true} title="Case title" desc={desc} />
-          <Case image={Image} title="Case title" desc={desc} />
-          <Case image={Image} mirror={true} title="Case title" desc={desc} />
-          <Case image={Image} title="Case title" desc={desc} />
-          <Case image={Image} mirror={true} title="Case title" desc={desc} />
+          <Case
+            anim="fade-right"
+            image={Image}
+            title="Case title"
+            desc={desc}
+          />
+          <Case
+            anim="fade-left"
+            image={Image}
+            mirror={true}
+            title="Case title"
+            desc={desc}
+          />
+          <Case
+            anim="fade-right"
+            image={Image}
+            title="Case title"
+            desc={desc}
+          />
+          <Case
+            anim="fade-left"
+            image={Image}
+            mirror={true}
+            title="Case title"
+            desc={desc}
+          />
+          <Case
+            anim="fade-right"
+            image={Image}
+            title="Case title"
+            desc={desc}
+          />
+          <Case
+            anim="fade-left"
+            image={Image}
+            mirror={true}
+            title="Case title"
+            desc={desc}
+          />
         </div>
       </main>
     </>

@@ -1,14 +1,8 @@
 import React from "react";
 
-function Explore({ num, title, text, image, anim, dur, del, anchor }) {
+function Explore({ num, title, text, image }) {
   return (
-    <div
-      data-aos={anim}
-      data-aos-duration={dur}
-      data-aos-delay={del}
-      data-aos-anchor-placement={anchor}
-      className={`explore__box explore__box--${num}`}
-    >
+    <div className={`explore__box explore__box--${num}`}>
       <div className="explore__circle"></div>
       <div
         className="explore__img"

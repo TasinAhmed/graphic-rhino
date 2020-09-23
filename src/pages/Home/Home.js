@@ -31,7 +31,7 @@ const content =
 function Home() {
   const myRef = useRef(null);
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true, anchorPlacement: "center-bottom" });
+    AOS.init({ duration: 1000, once: true, anchorPlacement: "center-bottom" });
   }, []);
   return (
     <>
@@ -66,36 +66,24 @@ function Home() {
               title="case title"
               text={exploreText}
               image={Img1}
-              anim="zoom-in"
-              dur={500}
-              anchor="top-bottom"
             ></Explore>
             <Explore
               num={2}
               title="case title"
               text={exploreText}
               image={Img2}
-              anim="zoom-in"
-              dur={500}
-              anchor="top-bottom"
             ></Explore>
             <Explore
               num={3}
               title="blog title"
               text={exploreText}
               image={Img3}
-              anim="zoom-in"
-              dur={500}
-              anchor="top-bottom"
             ></Explore>
             <Explore
               num={4}
               title="blog title"
               text={exploreText}
               image={Img4}
-              anim="zoom-in"
-              dur={500}
-              anchor="top-bottom"
             ></Explore>
           </div>
         </section>
