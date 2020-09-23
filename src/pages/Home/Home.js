@@ -97,41 +97,40 @@ function Home() {
         </section>
         <section className="services">
           <div className="container">
-            <Service
-              image={Ser1}
-              name="Grafisch ontwerp"
-              desc={desc}
-              hover={true}
-              anim="zoom-in"
-              dur={500}
-            />
-            <Service
-              image={Ser2}
-              name="Drukwerk"
-              desc={desc}
-              hover={true}
-              anim="zoom-in"
-              dur={500}
-              del={200}
-            />
-            <Service
-              image={Ser3}
-              name="Animaties"
-              desc={desc}
-              hover={true}
-              anim="zoom-in"
-              dur={500}
-              del={400}
-            />
-            <Service
-              image={Ser4}
-              name="Online marketing"
-              desc={desc}
-              hover={true}
-              anim="zoom-in"
-              dur={500}
-              del={600}
-            />
+            <div data-aos="zoom-in" data-aos-duration={500}>
+              <Service
+                image={Ser1}
+                name="Grafisch ontwerp"
+                desc={desc}
+                hover={true}
+              />
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration={500}
+              data-aos-delay={200}
+            >
+              <Service image={Ser2} name="Drukwerk" desc={desc} hover={true} />
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration={500}
+              data-aos-delay={400}
+            >
+              <Service image={Ser3} name="Animaties" desc={desc} hover={true} />
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration={500}
+              data-aos-delay={600}
+            >
+              <Service
+                image={Ser4}
+                name="Online marketing"
+                desc={desc}
+                hover={true}
+              />
+            </div>
           </div>
         </section>
         <section className="quotes">

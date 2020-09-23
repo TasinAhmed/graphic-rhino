@@ -5,7 +5,7 @@
   row-gap: 1rem;
   padding: 5rem 0;
 
-  @include respond(sm) {
+  @include respond(md) {
     grid-template-columns: repeat(2, 1fr);
   }
 
