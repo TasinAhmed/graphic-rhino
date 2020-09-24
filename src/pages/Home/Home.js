@@ -136,28 +136,30 @@ function Home() {
         <section className="quotes">
           <div className="container">
             <h2 className="heading-2">Wat onze klanten zeggen</h2>
-            <Quote name={name} text={quote} anim="zoom-in" dur={500} />
-            <Quote
-              name={name}
-              text={quote}
-              anim="zoom-in"
-              dur={500}
-              del={200}
-            />
-            <Quote
-              name={name}
-              text={quote}
-              anim="zoom-in"
-              dur={500}
-              del={400}
-            />
-            <Quote
-              name={name}
-              text={quote}
-              anim="zoom-in"
-              dur={500}
-              del={600}
-            />
+            <div data-aos="zoom-in" data-aos-duration={500}>
+              <Quote name={name} text={quote} />
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration={500}
+              data-aos-delay={200}
+            >
+              <Quote name={name} text={quote} />
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration={500}
+              data-aos-delay={400}
+            >
+              <Quote name={name} text={quote} />
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration={500}
+              data-aos-delay={600}
+            >
+              <Quote name={name} text={quote} />
+            </div>
           </div>
         </section>
       </main>
