@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./components/Footer/Footer";
-import "./styles/App.min.css";
+import "./styles/App.scss";
 import Menu from "./components/Menu/Menu";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";

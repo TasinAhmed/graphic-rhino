@@ -16,6 +16,7 @@ import Explore from "../../components/Explore/Explore";
 import TextBlock from "../../components/TextBlock/TextBlock";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useMediaQuery } from "react-responsive";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
@@ -30,8 +31,9 @@ const content =
 
 function Home() {
   const myRef = useRef(null);
+  const isSM = useMediaQuery({ query: "(max-width: 47.99875em)" });
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true, anchorPlacement: "center-bottom" });
+    AOS.init({ duration: 1000, once: true });
   }, []);
   return (
     <>
@@ -60,35 +62,41 @@ function Home() {
           </div>
         </section>
         <section className="explores">
-          <div className="container">
+          <div className="container" data-aos={isSM ? null : "zoom-in"}>
             <Explore
               num={1}
               title="case title"
               text={exploreText}
               image={Img1}
-            ></Explore>
+              anim={isSM ? "zoom-in" : null}
+            >
+              >
+            </Explore>
             <Explore
               num={2}
               title="case title"
               text={exploreText}
               image={Img2}
+              anim={isSM ? "zoom-in" : null}
             ></Explore>
             <Explore
               num={3}
               title="blog title"
               text={exploreText}
               image={Img3}
+              anim={isSM ? "zoom-in" : null}
             ></Explore>
             <Explore
               num={4}
               title="blog title"
               text={exploreText}
               image={Img4}
+              anim={isSM ? "zoom-in" : null}
             ></Explore>
           </div>
         </section>
         <section className="textBlock">
-          <div data-aos="fade-left" className="container">
+          <div data-aos="fade-right" className="container">
             <TextBlock
               title="Betaalbare designs/waarom Graphic Rhino"
               content={content}
