@@ -34,7 +34,7 @@ function Home() {
   const isSM = useMediaQuery({ query: "(max-width: 47.99875em)" });
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
-  }, []);
+  }, [isSM]);
   return (
     <>
       <Helmet>
@@ -62,13 +62,16 @@ function Home() {
           </div>
         </section>
         <section className="explores">
-          <div className="container" data-aos={isSM ? false : "fade-right"}>
+          <div
+            className="container"
+            {...(!isSM && { "data-aos": "fade-right" })}
+          >
             <Explore
               num={1}
               title="case title"
               text={exploreText}
               image={Img1}
-              anim={isSM ? "zoom-in" : null}
+              {...(isSM && { anim: "zoom-in" })}
             >
               >
             </Explore>
@@ -77,21 +80,21 @@ function Home() {
               title="case title"
               text={exploreText}
               image={Img2}
-              anim={isSM ? "zoom-in" : null}
+              {...(isSM && { anim: "zoom-in" })}
             ></Explore>
             <Explore
               num={3}
               title="blog title"
               text={exploreText}
               image={Img3}
-              anim={isSM ? "zoom-in" : null}
+              {...(isSM && { anim: "zoom-in" })}
             ></Explore>
             <Explore
               num={4}
               title="blog title"
               text={exploreText}
               image={Img4}
-              anim={isSM ? "zoom-in" : null}
+              {...(isSM && { anim: "zoom-in" })}
             ></Explore>
           </div>
         </section>
