@@ -62,7 +62,7 @@ function Home() {
           </div>
         </section>
         <section className="explores">
-          <div className="container" data-aos={isSM ? null : "zoom-in"}>
+          <div className="container" data-aos={isSM ? null : "fade-right"}>
             <Explore
               num={1}
               title="case title"

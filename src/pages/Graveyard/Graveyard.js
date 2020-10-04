@@ -35,7 +35,7 @@ function Graveyard() {
             desc={desc}
           />
           <Case
-            anim="fade-left"
+            anim="fade-right"
             image={Image}
             mirror={true}
             title="Case title"
@@ -48,7 +48,7 @@ function Graveyard() {
             desc={desc}
           />
           <Case
-            anim="fade-left"
+            anim="fade-right"
             image={Image}
             mirror={true}
             title="Case title"
@@ -61,7 +61,7 @@ function Graveyard() {
             desc={desc}
           />
           <Case
-            anim="fade-left"
+            anim="fade-right"
             image={Image}
             mirror={true}
             title="Case title"
