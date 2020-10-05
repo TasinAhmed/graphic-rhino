@@ -14,6 +14,7 @@ import Ser4 from "../../images/service-4.png";
 import Service from "../../components/Service/Service";
 import Explore from "../../components/Explore/Explore";
 import TextBlock from "../../components/TextBlock/TextBlock";
+import Logo from "../../images/slack.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useMediaQuery } from "react-responsive";
@@ -150,12 +151,24 @@ function Home() {
               enkele van onze klanten
             </div>
             <div className="home-logo__content">
-              <div className="home-logo__box"></div>
-              <div className="home-logo__box"></div>
-              <div className="home-logo__box"></div>
-              <div className="home-logo__box"></div>
-              <div className="home-logo__box"></div>
-              <div className="home-logo__box"></div>
+              <div className="home-logo__box">
+                <img src={Logo} alt="Company" className="home-logo__logo" />
+              </div>
+              <div className="home-logo__box">
+                <img src={Logo} alt="Company" className="home-logo__logo" />
+              </div>
+              <div className="home-logo__box">
+                <img src={Logo} alt="Company" className="home-logo__logo" />
+              </div>
+              <div className="home-logo__box">
+                <img src={Logo} alt="Company" className="home-logo__logo" />
+              </div>
+              <div className="home-logo__box">
+                <img src={Logo} alt="Company" className="home-logo__logo" />
+              </div>
+              <div className="home-logo__box">
+                <img src={Logo} alt="Company" className="home-logo__logo" />
+              </div>
             </div>
           </div>
         </section>
