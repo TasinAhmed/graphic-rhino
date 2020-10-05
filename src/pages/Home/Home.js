@@ -147,7 +147,7 @@ function Home() {
         <section className="home-logo">
           <div className="container">
             <div className="home-logo__title heading-2">
-              some of our clients
+              enkele van onze klanten
             </div>
             <div className="home-logo__content">
               <div className="home-logo__box"></div>
