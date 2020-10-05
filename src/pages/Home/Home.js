@@ -144,6 +144,21 @@ function Home() {
             </div>
           </div>
         </section>
+        <section className="home-logo">
+          <div className="container">
+            <div className="home-logo__title heading-2">
+              some of our clients
+            </div>
+            <div className="home-logo__content">
+              <div className="home-logo__box"></div>
+              <div className="home-logo__box"></div>
+              <div className="home-logo__box"></div>
+              <div className="home-logo__box"></div>
+              <div className="home-logo__box"></div>
+              <div className="home-logo__box"></div>
+            </div>
+          </div>
+        </section>
         <section className="quotes">
           <div className="container">
             <h2 className="heading-2">Wat onze klanten zeggen</h2>
