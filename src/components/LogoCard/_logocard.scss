@@ -2,6 +2,12 @@
   height: 20rem;
   perspective: 2000px;
 
+  &__enter {
+    animation: zoomIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+  }
+
   @include respond(sm) {
     height: 25rem;
   }

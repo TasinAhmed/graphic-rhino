@@ -272,13 +272,14 @@ function Home() {
               />
             </div>
             <Button
-              btnText="Laad meer..."
+              btnText="laad meer..."
               click={(e) => {
                 const logoCards = document.querySelectorAll(".logo-card");
                 const temp = count;
                 for (let i = temp; i < temp + reveal; i++) {
                   if (i < logoCards.length) {
                     logoCards[i].style.display = "block";
+                    logoCards[i].classList.add("logo-card__enter");
                     count += 1;
                   }
                 }

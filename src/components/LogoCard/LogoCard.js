@@ -1,8 +1,8 @@
 import React from "react";
 
-function LogoCard({ logo, name, desc }) {
+function LogoCard({ logo, name, desc, anim }) {
   return (
-    <div className="logo-card">
+    <div className="logo-card" data-aos={anim}>
       <div className="logo-card__inner">
         <div className="logo-card__front">
           <img src={logo} alt="Company" className="logo-card__logo" />
