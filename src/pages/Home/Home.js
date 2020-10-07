@@ -155,26 +155,38 @@ function Home() {
               enkele van onze klanten
             </div>
             <div className="home-logo__content">
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
+              <div data-aos="zoom-in" data-aos-duration={500}>
+                <LogoCard
+                  logo={Logo}
+                  name="name"
+                  desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                  anim="zoom-in"
+                />
+              </div>
+              <div data-aos="zoom-in" data-aos-duration={500}>
+                <LogoCard
+                  logo={Logo}
+                  name="name"
+                  desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                  anim="zoom-in"
+                />
+              </div>
+              <div data-aos="zoom-in" data-aos-duration={500}>
+                <LogoCard
+                  logo={Logo}
+                  name="name"
+                  desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                  anim="zoom-in"
+                />
+              </div>
+              <div data-aos="zoom-in" data-aos-duration={500}>
+                <LogoCard
+                  logo={Logo}
+                  name="name"
+                  desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                  anim="zoom-in"
+                />
+              </div>
               <LogoCard
                 logo={Logo}
                 name="name"
