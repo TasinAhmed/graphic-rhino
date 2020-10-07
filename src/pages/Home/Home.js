@@ -32,7 +32,7 @@ const desc = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.";
 const content =
   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
 const reveal = 4;
-let count = 4;
+let count;
 
 function Home() {
   const myRef = useRef(null);
@@ -40,6 +40,10 @@ function Home() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, [isSM]);
+
+  useEffect(() => {
+    count = 4;
+  }, []);
   return (
     <>
       <Helmet>
@@ -297,6 +301,7 @@ function Home() {
                 }
                 if (count >= logoCards.length - 1) {
                   e.target.style.display = "none";
+                  count = 4;
                 }
               }}
             />
