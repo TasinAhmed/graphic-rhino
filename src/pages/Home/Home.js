@@ -18,6 +18,7 @@ import Logo from "../../images/slack.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useMediaQuery } from "react-responsive";
+import LogoCard from "../../components/LogoCard/LogoCard";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
@@ -151,24 +152,14 @@ function Home() {
               enkele van onze klanten
             </div>
             <div className="home-logo__content">
-              <div className="home-logo__box">
-                <img src={Logo} alt="Company" className="home-logo__logo" />
-              </div>
-              <div className="home-logo__box">
-                <img src={Logo} alt="Company" className="home-logo__logo" />
-              </div>
-              <div className="home-logo__box">
-                <img src={Logo} alt="Company" className="home-logo__logo" />
-              </div>
-              <div className="home-logo__box">
-                <img src={Logo} alt="Company" className="home-logo__logo" />
-              </div>
-              <div className="home-logo__box">
-                <img src={Logo} alt="Company" className="home-logo__logo" />
-              </div>
-              <div className="home-logo__box">
-                <img src={Logo} alt="Company" className="home-logo__logo" />
-              </div>
+              <LogoCard logo={Logo} />
+              <LogoCard logo={Logo} />
+              <LogoCard logo={Logo} />
+              <LogoCard logo={Logo} />
+              <LogoCard logo={Logo} />
+              <LogoCard logo={Logo} />
+              <LogoCard logo={Logo} />
+              <LogoCard logo={Logo} />
             </div>
           </div>
         </section>

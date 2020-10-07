@@ -90,38 +90,34 @@
 
   .home-logo {
     text-align: center;
-    background-position: center center;
-    background-size: cover;
 
     .container {
-      padding: 15rem 25rem;
+      padding: 15rem 20rem;
+
+      @include respond(lg) {
+        padding-left: 8rem;
+        padding-right: 8rem;
+      }
+
+      @include respond(md) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
     }
 
     &__content {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 3rem;
-      column-gap: 3rem;
-    }
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 1rem;
+      column-gap: 1rem;
 
-    &__box {
-      height: 20rem;
-      background-color: white;
-      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0.8;
+      @include respond(sm) {
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
     &__title {
       margin-bottom: 5rem;
-    }
-
-    &__logo {
-      width: 15rem;
     }
   }
 }
