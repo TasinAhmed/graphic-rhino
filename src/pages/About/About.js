@@ -34,11 +34,11 @@ function About() {
       <main className="about" id="about" ref={myRef}>
         <div className="container">
           <TextBlock anim="fade-right" title="reclamebureau" content={text2} />
-          <div className="about__img" data-aos="fade-right">
+          <div className="about__img" data-aos="zoom-in">
             <img src={Image} alt="About" />
           </div>
           <TextBlock anim="fade-right" title="name" content={text2} />
-          <div className="about__img" data-aos="fade-right">
+          <div className="about__img" data-aos="zoom-in">
             <img src={Image} alt="About" />
           </div>
           <TextBlock anim="fade-right" title="beliefs" content={text2} />

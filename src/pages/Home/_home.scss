@@ -108,8 +108,10 @@
     &__content {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
       row-gap: 2rem;
       column-gap: 2rem;
+      margin-bottom: 5rem;
 
       @include respond(sm) {
         grid-template-columns: 1fr 1fr;
@@ -118,6 +120,10 @@
 
     &__title {
       margin-bottom: 5rem;
+    }
+
+    .logo-card:not(:nth-child(-n + 4)) {
+      display: none;
     }
   }
 }

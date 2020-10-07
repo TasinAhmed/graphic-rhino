@@ -19,6 +19,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useMediaQuery } from "react-responsive";
 import LogoCard from "../../components/LogoCard/LogoCard";
+import Button from "../../components/Button/Button";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
@@ -30,6 +31,8 @@ const exploreText =
 const desc = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.";
 const content =
   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
+const reveal = 4;
+let count = 4;
 
 function Home() {
   const myRef = useRef(null);
@@ -192,7 +195,98 @@ function Home() {
                 name="name"
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
               />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
             </div>
+            <Button
+              btnText="Laad meer..."
+              click={(e) => {
+                const logoCards = document.querySelectorAll(".logo-card");
+                const temp = count;
+                for (let i = temp; i < temp + reveal; i++) {
+                  if (i < logoCards.length) {
+                    logoCards[i].style.display = "block";
+                    count += 1;
+                  }
+                }
+                if (count >= logoCards.length - 1) {
+                  e.target.style.display = "none";
+                }
+              }}
+            />
           </div>
         </section>
         <section className="quotes">
