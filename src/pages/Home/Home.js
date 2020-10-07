@@ -152,14 +152,46 @@ function Home() {
               enkele van onze klanten
             </div>
             <div className="home-logo__content">
-              <LogoCard logo={Logo} />
-              <LogoCard logo={Logo} />
-              <LogoCard logo={Logo} />
-              <LogoCard logo={Logo} />
-              <LogoCard logo={Logo} />
-              <LogoCard logo={Logo} />
-              <LogoCard logo={Logo} />
-              <LogoCard logo={Logo} />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
+              <LogoCard
+                logo={Logo}
+                name="name"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+              />
             </div>
           </div>
         </section>
