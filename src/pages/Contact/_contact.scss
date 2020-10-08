@@ -1,6 +1,8 @@
 .contact {
   .information {
     position: relative;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
   }
 
   .map {
@@ -8,11 +10,8 @@
   }
 
   &__content {
-    position: absolute;
-    top: 3rem;
-    right: 3rem;
     background-color: white;
     padding: 5rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 5px 0 5px -5px #333;
   }
 }
