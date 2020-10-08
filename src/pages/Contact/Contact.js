@@ -18,10 +18,7 @@ function Contact() {
     }
   }
   const recaptchaRef = React.createRef();
-  const onSubmit = () => {
-    const recaptchaValue = recaptchaRef.current.getValue();
-    console.log(recaptchaValue);
-  };
+  const onSubmit = () => {};
 
   return (
     <>
