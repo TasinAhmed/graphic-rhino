@@ -18,7 +18,9 @@ function Contact() {
     }
   }
   const recaptchaRef = React.createRef();
-  const onSubmit = () => {};
+  const onSubmit = () => {
+    console.log(captcha);
+  };
 
   return (
     <>
