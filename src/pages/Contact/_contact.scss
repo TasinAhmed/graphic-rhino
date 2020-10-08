@@ -1,91 +1,18 @@
 .contact {
   .information {
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 10rem;
-      align-items: center;
-      padding-top: 10rem;
-      padding-bottom: 10rem;
-
-      .map {
-        height: 50rem;
-
-        @include respond(sm) {
-          margin-bottom: 5rem;
-        }
-      }
-
-      @include respond(sm) {
-        grid-template-columns: 1fr;
-      }
-    }
+    position: relative;
   }
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__input {
-      display: block;
-      font-size: 1.8rem;
-      background-color: $color-grey;
-      border: none;
-      padding: 1rem 2rem;
-      border-radius: 5px;
-      border: 1px solid lightgray;
-      transition: all 0.3s;
-      margin-bottom: 0.5rem;
-      width: 100%;
+  .map {
+    height: 100rem;
+  }
 
-      &:focus {
-        box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
-        outline: none;
-      }
-
-      &:placeholder-shown + .form__label {
-        transform: translateY(-4rem);
-        opacity: 0;
-        visibility: hidden;
-      }
-
-      &:not(:placeholder-shown):not(:invalid),
-      &:focus:not(:invalid) {
-        border: 1px solid $color-primary;
-      }
-
-      &:not(:placeholder-shown):invalid,
-      &:focus:invalid {
-        border: 1px solid red;
-      }
-    }
-
-    &__captcha {
-      margin-bottom: 2rem;
-    }
-
-    .btn {
-      font-size: 2rem;
-    }
-
-    &__group {
-      margin-bottom: 0.5rem;
-      width: 70%;
-
-      @include respond(md) {
-        width: 100%;
-      }
-
-      @include respond(sm) {
-        width: 70%;
-      }
-    }
-
-    &__label {
-      font-size: 1.6rem;
-      margin-left: 2rem;
-      display: block;
-      transition: all 0.3s;
-    }
+  &__content {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    background-color: white;
+    padding: 5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 }

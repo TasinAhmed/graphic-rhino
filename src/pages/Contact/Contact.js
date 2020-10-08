@@ -30,21 +30,20 @@ function Contact() {
       <Header image={Background} title={title} text={text} scrollTo={myRef} />
       <main className="contact" ref={myRef}>
         <section className="information">
-          <div className="container">
-            <MapWithAMarker
-              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi31TdptmmtjtJbOeX3sts18QAJq7F2ZQ&v=3.exp&libraries=geometry,drawing,places"
-              loadingElement={<div style={{ height: `100%` }} />}
-              containerElement={<div className="map" />}
-              mapElement={<div style={{ height: `100%` }} />}
-              lat={50.7558602}
-              lng={3.4277491}
-            />
-            <form
-              className="form"
-              data-aos="zoom-in"
-              data-aos-duration="500"
-              onSubmit={onSubmit}
-            >
+          <MapWithAMarker
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi31TdptmmtjtJbOeX3sts18QAJq7F2ZQ&v=3.exp&libraries=geometry,drawing,places"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div className="map" />}
+            mapElement={<div style={{ height: `100%` }} />}
+            lat={50.7558602}
+            lng={3.4277491}
+          />
+          <div
+            className="contact__content"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+          >
+            <form className="form" onSubmit={onSubmit}>
               <div className="form__group">
                 <input
                   className="form__input"

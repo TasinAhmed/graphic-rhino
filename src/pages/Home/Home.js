@@ -288,7 +288,7 @@ function Home() {
               />
             </div>
             <Button
-              btnText="laad meer..."
+              btnText="laad meer"
               click={(e) => {
                 const logoCards = document.querySelectorAll(".logo-card");
                 const temp = count;
