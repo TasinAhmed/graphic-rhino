@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/contact.jpg";
 import { Helmet } from "react-helmet";
 import MapWithAMarker from "../../components/Map/MapWithAMarker";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const title = "Contacteer ons";
 const text =
@@ -10,6 +11,17 @@ const text =
 
 function Contact() {
   const myRef = useRef(null);
+  const [captcha, setCaptcha] = useState(false);
+  function onChange(value) {
+    if (value) {
+      setCaptcha(true);
+    }
+  }
+  const recaptchaRef = React.createRef();
+  const onSubmit = () => {
+    const recaptchaValue = recaptchaRef.current.getValue();
+    console.log(recaptchaValue);
+  };
 
   return (
     <>
@@ -28,7 +40,12 @@ function Contact() {
               lat={50.7558602}
               lng={3.4277491}
             />
-            <form className="form" data-aos="zoom-in" data-aos-duration="500">
+            <form
+              className="form"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              onSubmit={onSubmit}
+            >
               <div className="form__group">
                 <input
                   className="form__input"
@@ -38,7 +55,7 @@ function Contact() {
                   pattern="[a-zA-Z][a-zA-Z\s]*"
                   id="name"
                 />
-                <label className="form__label" for="name">
+                <label className="form__label" htmlFor="name">
                   Naam + achternaam*
                 </label>
               </div>
@@ -50,7 +67,7 @@ function Contact() {
                   placeholder="Email*"
                   id="email"
                 />
-                <label className="form__label" for="email">
+                <label className="form__label" htmlFor="email">
                   Email*
                 </label>
               </div>
@@ -63,7 +80,7 @@ function Contact() {
                   pattern="\d+"
                   id="phone"
                 />
-                <label className="form__label" for="phone">
+                <label className="form__label" htmlFor="phone">
                   Telefoonnummer
                 </label>
               </div>
@@ -75,11 +92,17 @@ function Contact() {
                   placeholder="Bericht"
                   id="report"
                 />
-                <label className="form__label" for="report">
+                <label className="form__label" htmlFor="report">
                   Bericht
                 </label>
               </div>
-
+              <div className="form__captcha">
+                <ReCAPTCHA
+                  sitekey="6Lf37dQZAAAAAJw6EqXa4noEURKmaz-yZgmI6XkE"
+                  onChange={onChange}
+                  ref={recaptchaRef}
+                />
+              </div>
               <button type="submit" className="btn">
                 verzenden
               </button>

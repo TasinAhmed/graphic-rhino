@@ -18,7 +18,11 @@ function Cookie() {
         <Button
           btnText="understood"
           click={() => {
-            setCookie("accept", "true", { path: "/" });
+            setCookie("accept", "true", {
+              path: "/",
+              sameSite: "none",
+              secure: true,
+            });
             console.log(cookies.name);
           }}
         />
