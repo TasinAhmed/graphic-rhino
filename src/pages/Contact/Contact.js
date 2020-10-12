@@ -13,7 +13,7 @@ function Contact() {
     console.log("Submitted")
   }
   const [values, setValues] = useState({fName: "", lName: "", email: "", phone: "", message: ""}) 
-  const [errors, setErrors] = useState({fName: "", lName: "", email: "", phone: "", message: ""}) 
+  //const [errors, setErrors] = useState({fName: "", lName: "", email: "", phone: "", message: ""}) 
 
   const handleChange = (e) => {
     const {name,value} = e.target;
