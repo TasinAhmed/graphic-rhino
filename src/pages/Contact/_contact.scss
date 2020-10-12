@@ -1,17 +1,96 @@
 .contact {
   .information {
-    position: relative;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 3fr;
+
+    @include respond(xl) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond(md) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .map {
     height: 100rem;
+
+    @include respond(md) {
+      height: 80rem;
+    }
+
+    @include respond(sm) {
+      height: 70rem;
+    }
+
+    @include respond(sm) {
+      height: 50rem;
+    }
   }
 
   &__content {
     background-color: white;
-    padding: 5rem;
+    padding: 7rem;
     box-shadow: 5px 0 5px -5px #333;
+
+    @include respond(md) {
+      padding: 7rem 15rem;
+    }
+
+    @include respond(sm) {
+      padding: 7rem 10rem;
+    }
+
+    @include respond(xs) {
+      padding: 7rem;
+    }
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 4rem;
+
+    &__input {
+      padding-bottom: 1rem;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid rgba(38, 44, 49, 0.3);
+      transition: all 0.3s;
+      order: 2;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__group {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.8rem;
+
+      &--message {
+        grid-column: 1/-1;
+
+        textarea {
+          resize: none;
+          height: 20rem;
+        }
+      }
+
+      label {
+        margin-bottom: 1rem;
+        color: $color-primary;
+        font-weight: bold;
+        order: 1;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  .btn[type="submit"] {
+    grid-column: 1/-1;
+    justify-self: center;
   }
 }

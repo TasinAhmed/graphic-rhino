@@ -3,24 +3,28 @@ import Header from "../../components/Header/Header";
 import Background from "../../images/contact.jpg";
 import { Helmet } from "react-helmet";
 import MapWithAMarker from "../../components/Map/MapWithAMarker";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const title = "Contacteer ons";
 const text =
   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.";
 
 function Contact() {
-  const myRef = useRef(null);
-  const [captcha, setCaptcha] = useState(false);
-  function onChange(value) {
-    if (value) {
-      setCaptcha(true);
-    }
-  }
-  const recaptchaRef = React.createRef();
   const onSubmit = () => {
-    console.log(captcha);
-  };
+    console.log("Submitted")
+  }
+  const [values, setValues] = useState({fName: "", lName: "", email: "", phone: "", message: ""}) 
+  const [errors, setErrors] = useState({fName: "", lName: "", email: "", phone: "", message: ""}) 
+
+  const handleChange = (e) => {
+    const {name,value} = e.target;
+    setValues({...values, [name]: value})
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit();
+  }
+  const myRef = useRef(null);
 
   return (
     <>
@@ -39,63 +43,76 @@ function Contact() {
             lng={3.4277491}
           />
           <div className="contact__content">
-            <form className="form" onSubmit={onSubmit}>
-              <div className="form__group">
+            <form className="form" onSubmit={handleSubmit} noValidate>
+              <div className="form__group form__group--fname">
                 <input
                   className="form__input"
                   required
                   type="text"
-                  placeholder="Naam + achternaam*"
-                  pattern="[a-zA-Z][a-zA-Z\s]*"
-                  id="name"
+                  id="first-name"
+                  name="fName"
+                  value={values.fName}
+                  onChange={handleChange}
                 />
-                <label className="form__label" htmlFor="name">
-                  Naam + achternaam*
+                <label className="form__label" htmlFor="first-name">
+                  First Name*
                 </label>
               </div>
-              <div className="form__group">
+              <div className="form__group form__group--lname">
+                <input
+                  className="form__input"
+                  required
+                  type="text"
+                  id="last-name"
+                  name="lName"
+                  value={values.lName}
+                  onChange={handleChange}
+                />
+                <label className="form__label" htmlFor="last-name">
+                  Last Name*
+                </label>
+              </div>
+              <div className="form__group form__group--email">
                 <input
                   className="form__input"
                   required
                   type="email"
-                  placeholder="Email*"
                   id="email"
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange}
                 />
                 <label className="form__label" htmlFor="email">
                   Email*
                 </label>
               </div>
-              <div className="form__group">
+              <div className="form__group form__group--phone">
                 <input
                   className="form__input"
-                  required
                   type="tel"
-                  placeholder="Telefoonnummer"
                   pattern="\d+"
                   id="phone"
+                  name="phone"
+                  value={values.phone}
+                  onChange={handleChange}
                 />
                 <label className="form__label" htmlFor="phone">
                   Telefoonnummer
                 </label>
               </div>
-              <div className="form__group">
-                <input
+              <div className="form__group form__group--message">
+                <textarea
                   className="form__input"
                   required
                   type="text"
-                  placeholder="Bericht"
-                  id="report"
+                  id="message"
+                  name="message"
+                  value={values.message}
+                  onChange={handleChange}
                 />
-                <label className="form__label" htmlFor="report">
-                  Bericht
+                <label className="form__label" htmlFor="message">
+                  Bericht*
                 </label>
-              </div>
-              <div className="form__captcha">
-                <ReCAPTCHA
-                  sitekey="6Lf37dQZAAAAAJw6EqXa4noEURKmaz-yZgmI6XkE"
-                  onChange={onChange}
-                  ref={recaptchaRef}
-                />
               </div>
               <button type="submit" className="btn">
                 verzenden
