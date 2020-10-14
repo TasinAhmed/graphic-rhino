@@ -10,20 +10,32 @@ const text =
 
 function Contact() {
   const onSubmit = () => {
-    console.log("Submitted")
-  }
-  const [values, setValues] = useState({fName: "", lName: "", email: "", phone: "", message: ""}) 
-  //const [errors, setErrors] = useState({fName: "", lName: "", email: "", phone: "", message: ""}) 
+    console.log("Submitted");
+  };
+  const [values, setValues] = useState({
+    fName: "",
+    lName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  // const [errors, setErrors] = useState({
+  //   fName: "",
+  //   lName: "",
+  //   email: "",
+  //   phone: "",
+  //   message: "",
+  // });
 
   const handleChange = (e) => {
-    const {name,value} = e.target;
-    setValues({...values, [name]: value})
-  }
+    const { name, value } = e.target;
+    setValues({ ...values, [name]: value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit();
-  }
+  };
   const myRef = useRef(null);
 
   return (

@@ -13,15 +13,7 @@
   }
 
   .map {
-    height: 100rem;
-
-    @include respond(md) {
-      height: 80rem;
-    }
-
-    @include respond(sm) {
-      height: 70rem;
-    }
+    height: 70rem;
 
     @include respond(sm) {
       height: 50rem;
@@ -32,15 +24,18 @@
     background-color: white;
     padding: 7rem;
     box-shadow: 5px 0 5px -5px #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .form {
+    width: 100%;
+    max-width: 50rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
     row-gap: 4rem;
-    max-width: 52rem;
-    margin: 0 auto;
 
     &__input {
       padding-bottom: 1rem;

@@ -3,7 +3,8 @@ import Header from "../../components/Header/Header";
 import Background from "../../images/about.jpg";
 import { Helmet } from "react-helmet";
 import TextBlock from "../../components/TextBlock/TextBlock";
-import Image from "../../images/explore-1.jpg";
+import Img1 from "../../images/about-1.jpg";
+import Img2 from "../../images/about-2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -35,11 +36,11 @@ function About() {
         <div className="container">
           <TextBlock anim="fade-right" title="reclamebureau" content={text2} />
           <div className="about__img" data-aos="zoom-in">
-            <img src={Image} alt="About" />
+            <img src={Img1} alt="About" />
           </div>
           <TextBlock anim="fade-right" title="name" content={text2} />
           <div className="about__img" data-aos="zoom-in">
-            <img src={Image} alt="About" />
+            <img src={Img2} alt="About" />
           </div>
           <TextBlock anim="fade-right" title="beliefs" content={text2} />
         </div>
