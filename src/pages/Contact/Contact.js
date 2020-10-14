@@ -45,6 +45,9 @@ function Contact() {
           <div className="contact__content">
             <form className="form" onSubmit={handleSubmit} noValidate>
               <div className="form__group form__group--fname">
+                <label className="form__label" htmlFor="first-name">
+                  First Name*
+                </label>
                 <input
                   className="form__input"
                   required
@@ -54,11 +57,14 @@ function Contact() {
                   value={values.fName}
                   onChange={handleChange}
                 />
-                <label className="form__label" htmlFor="first-name">
-                  First Name*
-                </label>
+                <div className="form__border">
+                  <div className="form__fill"></div>
+                </div>
               </div>
               <div className="form__group form__group--lname">
+                <label className="form__label" htmlFor="last-name">
+                  Last Name*
+                </label>
                 <input
                   className="form__input"
                   required
@@ -68,11 +74,14 @@ function Contact() {
                   value={values.lName}
                   onChange={handleChange}
                 />
-                <label className="form__label" htmlFor="last-name">
-                  Last Name*
-                </label>
+                <div className="form__border">
+                  <div className="form__fill"></div>
+                </div>
               </div>
               <div className="form__group form__group--email">
+                <label className="form__label" htmlFor="email">
+                  Email*
+                </label>
                 <input
                   className="form__input"
                   required
@@ -82,11 +91,14 @@ function Contact() {
                   value={values.email}
                   onChange={handleChange}
                 />
-                <label className="form__label" htmlFor="email">
-                  Email*
-                </label>
+                <div className="form__border">
+                  <div className="form__fill"></div>
+                </div>
               </div>
               <div className="form__group form__group--phone">
+                <label className="form__label" htmlFor="phone">
+                  Telefoonnummer
+                </label>
                 <input
                   className="form__input"
                   type="tel"
@@ -96,11 +108,14 @@ function Contact() {
                   value={values.phone}
                   onChange={handleChange}
                 />
-                <label className="form__label" htmlFor="phone">
-                  Telefoonnummer
-                </label>
+                <div className="form__border">
+                  <div className="form__fill"></div>
+                </div>
               </div>
               <div className="form__group form__group--message">
+                <label className="form__label" htmlFor="message">
+                  Bericht*
+                </label>
                 <textarea
                   className="form__input"
                   required
@@ -110,9 +125,9 @@ function Contact() {
                   value={values.message}
                   onChange={handleChange}
                 />
-                <label className="form__label" htmlFor="message">
-                  Bericht*
-                </label>
+                <div className="form__border">
+                  <div className="form__fill"></div>
+                </div>
               </div>
               <button type="submit" className="btn">
                 verzenden

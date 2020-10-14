@@ -195,7 +195,7 @@ const defaultMapOptions = [
 const MapWithAMarker = withScriptjs(
   withGoogleMap(({ lat, lng }) => (
     <GoogleMap
-      defaultZoom={15}
+      defaultZoom={13}
       defaultCenter={{ lat: lat, lng: lng }}
       options={{
         styles: defaultMapOptions,
