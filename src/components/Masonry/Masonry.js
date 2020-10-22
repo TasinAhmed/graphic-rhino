@@ -7,7 +7,11 @@ function Masonry({ images }) {
     items.push(
       <Link to={x.linkTo}>
         <div className="masonry__block">
-          <img className="masonry__img" alt="Grid Item" src={x.url} />
+          <img
+            className="masonry__img"
+            alt="Grid Item"
+            src={require("../../images/" + x.url)}
+          />
           <div className="masonry__cover"></div>
           <div className="masonry__content">
             <div className="masonry__title">{x.title}</div>
@@ -17,7 +21,6 @@ function Masonry({ images }) {
       </Link>
     );
   }
-  console.log(items);
   return <div className="masonry">{items}</div>;
 }
 
