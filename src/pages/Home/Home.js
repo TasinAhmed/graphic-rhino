@@ -14,12 +14,20 @@ import Ser4 from "../../images/service-4.png";
 import Service from "../../components/Service/Service";
 import Explore from "../../components/Explore/Explore";
 import TextBlock from "../../components/TextBlock/TextBlock";
-import Logo from "../../images/slack.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useMediaQuery } from "react-responsive";
 import LogoCard from "../../components/LogoCard/LogoCard";
 import Button from "../../components/Button/Button";
+
+import Client1 from "../../images/client-1.png";
+import Client2 from "../../images/client-2.svg";
+import Client3 from "../../images/client-3.jpg";
+import Client4 from "../../images/client-4.jpg";
+import Client5 from "../../images/client-5.png";
+import Client6 from "../../images/client-6.png";
+import Client7 from "../../images/client-7.jpg";
+import Client8 from "../../images/client-8.png";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
@@ -161,7 +169,7 @@ function Home() {
             <div className="home-logo__content">
               <div data-aos="zoom-in" data-aos-duration={500}>
                 <LogoCard
-                  logo={Logo}
+                  logo={Client1}
                   name="name"
                   desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
                   anim="zoom-in"
@@ -169,7 +177,7 @@ function Home() {
               </div>
               <div data-aos="zoom-in" data-aos-duration={500}>
                 <LogoCard
-                  logo={Logo}
+                  logo={Client2}
                   name="name"
                   desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
                   anim="zoom-in"
@@ -177,7 +185,7 @@ function Home() {
               </div>
               <div data-aos="zoom-in" data-aos-duration={500}>
                 <LogoCard
-                  logo={Logo}
+                  logo={Client3}
                   name="name"
                   desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
                   anim="zoom-in"
@@ -185,104 +193,29 @@ function Home() {
               </div>
               <div data-aos="zoom-in" data-aos-duration={500}>
                 <LogoCard
-                  logo={Logo}
+                  logo={Client4}
                   name="name"
                   desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
                   anim="zoom-in"
                 />
               </div>
               <LogoCard
-                logo={Logo}
+                logo={Client5}
                 name="name"
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
               />
               <LogoCard
-                logo={Logo}
+                logo={Client6}
                 name="name"
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
               />
               <LogoCard
-                logo={Logo}
+                logo={Client7}
                 name="name"
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
               />
               <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
-              />
-              <LogoCard
-                logo={Logo}
+                logo={Client8}
                 name="name"
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
               />
