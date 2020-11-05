@@ -170,54 +170,54 @@ function Home() {
               <div data-aos="zoom-in" data-aos-duration={500}>
                 <LogoCard
                   logo={Client1}
-                  name="name"
-                  desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                  name="Barbecook"
+                  desc="Belgische BBQ’s. Born from steel, raised by men!"
                   anim="zoom-in"
                 />
               </div>
               <div data-aos="zoom-in" data-aos-duration={500}>
                 <LogoCard
                   logo={Client2}
-                  name="name"
-                  desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                  name="Edgard & Cooper"
+                  desc="Gezond & natuurlijke honden- & kattenvoeding. Geef eten dat goed voelt!"
                   anim="zoom-in"
                 />
               </div>
               <div data-aos="zoom-in" data-aos-duration={500}>
                 <LogoCard
                   logo={Client3}
-                  name="name"
-                  desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                  name="Happy Handmade Jewels"
+                  desc="Unieke handgemaakte juwelen, van hobby tot winkel!"
                   anim="zoom-in"
                 />
               </div>
               <div data-aos="zoom-in" data-aos-duration={500}>
                 <LogoCard
                   logo={Client4}
-                  name="name"
-                  desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                  name="Little Handmade Stories"
+                  desc="Handmade with love! Uiteenlopende merken van handgemaakte spullen en cadeau artikelen."
                   anim="zoom-in"
                 />
               </div>
               <LogoCard
                 logo={Client5}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                name="Malamute Matters"
+                desc="Honden VZW uit de UK, all dogs matter!"
               />
               <LogoCard
                 logo={Client6}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                name="Plan International"
+                desc="Waar gelijke kansen voor meisjes en respect voor kinderrechten mogelijk wordt!"
               />
               <LogoCard
                 logo={Client7}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                name="Trail Nomad"
+                desc="Place to be voor jouw offroad onderdelen en toebehoren!"
               />
               <LogoCard
                 logo={Client8}
-                name="name"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing."
+                name="VP Forever"
+                desc="Hun missie is mensen verenigen en kennis delen om ontwikkeling op gang te brengen! "
               />
             </div>
             <Button

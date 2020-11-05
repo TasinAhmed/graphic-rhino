@@ -44,8 +44,8 @@
     background-image: linear-gradient(to right bottom, #72c1a7, #55b495);
     flex-direction: column;
     transform: rotateY(180deg);
-    padding: 3rem;
-    font-size: 1.5rem;
+    padding: 2rem;
+    font-size: 1.4rem;
   }
 
   &__logo {
@@ -55,7 +55,7 @@
   &__name {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
   }
 }
