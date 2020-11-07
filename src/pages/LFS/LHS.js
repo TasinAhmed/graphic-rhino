@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "../../images/lhspreview.jpg";
-import { Helmet } from "react-helmet";
 import Header from "../../components/Header/Header";
 import Img1 from "../../images/lhs-1.jpg";
 import Img2 from "../../images/lhs-2.jpg";
@@ -9,13 +8,10 @@ import Img3 from "../../images/lhs-3.jpg";
 function LHS() {
   return (
     <>
-      <Helmet>
-        <title>Graphic Rhino</title>
-      </Helmet>
       <Header image={Image} title="LITTLE HANDMADE STORIES, AVELGEM" />
       <main className="lhs">
         <div className="container case-container">
-          <img src={Img1} className="case-img" />
+          <img src={Img1} className="case-img" alt="" />
           <div className="case-content">
             <div className="case-title">LITTLE HANDMADE STORIES, AVELGEM</div>
             <p>
@@ -35,7 +31,7 @@ function LHS() {
               kaartje, maar ook voelt je het kaartje in handen krijgt.
             </p>
           </div>
-          <img src={Img2} className="case-img grid-img-r" />
+          <img src={Img2} className="case-img grid-img-r" alt="" />
           <div className="case-content grid-text-l">
             <p>
               Little Handmade Stories was ook op zoek naar een logobord om de
@@ -53,7 +49,7 @@ function LHS() {
               materiaal voor een mooie en professionele afwerking.
             </p>
           </div>
-          <img src={Img3} className="case-img" />
+          <img src={Img3} className="case-img" alt="" />
           <div className="case-content">
             <p>
               Voor het openingsweekend werden ook, compleet conform de huisstijl

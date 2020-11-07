@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/home.jpg";
-import { Helmet } from "react-helmet";
 import Quote from "../../components/Quote/Quote";
 import Img1 from "../../images/explore-1.jpg";
 import Img2 from "../../images/explore-2.jpg";
@@ -54,9 +53,6 @@ function Home() {
   }, []);
   return (
     <>
-      <Helmet>
-        <title>Graphic Rhino | Home</title>
-      </Helmet>
       <Header
         image={Background}
         title={title}

@@ -9,36 +9,43 @@ const Images = [
     url: "debaveyepreview.jpg",
     title: "DE BAVEYE INTERIEUR, OUTRIJVE",
     desc: "",
+    linkTo: "/debaveye",
   },
   {
     url: "hhjpreview2.jpg",
     title: "HAPPY HANDMADE JEWELS, OUTRIJVE",
     desc: "",
+    linkTo: "/hhj",
   },
   {
     url: "keurslagerpreview2.jpg",
     title: "KEURSLAGER CRUL, MOEN",
     desc: "",
+    linkTo: "/keurslager",
   },
   {
     url: "ebopreview.jpg",
     title: "EBO, INGOOIGEM",
     desc: "",
+    linkTo: "/ebo",
   },
   {
     url: "portfolio1.jpg",
     title: "CAFETARIA MICHELSBERG, SPIERE-HELKIJN",
     desc: "",
+    linkTo: "/cafetaria",
   },
   {
     url: "portfolio2.jpg",
     title: "PITTA MELITA, AVELGEM",
     desc: "",
+    linkTo: "/pitta",
   },
   {
     url: "portfolio3.jpg",
     title: "MALAMUTE MATTERS, GROOT-BRITTANNIË",
     desc: "",
+    linkTo: "/malamute",
   },
   {
     url: "portfolio4.jpg",

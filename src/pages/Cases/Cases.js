@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/cases.jpg";
-import { Helmet } from "react-helmet";
 import Masonry from "../../components/Masonry/Masonry";
 import Images from "./Images";
 
@@ -13,9 +12,6 @@ function Cases() {
   const myRef = useRef(null);
   return (
     <>
-      <Helmet>
-        <title>Graphic Rhino | Cases</title>
-      </Helmet>
       <Header
         image={Background}
         title={title}

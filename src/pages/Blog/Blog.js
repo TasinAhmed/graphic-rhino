@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/blog.jpg";
-import { Helmet } from "react-helmet";
 import Images from "./Images";
 import Masonry from "../../components/Masonry/Masonry";
 
@@ -13,9 +12,6 @@ function Blog() {
   const myRef = useRef(null);
   return (
     <>
-      <Helmet>
-        <title>Graphic Rhino | Blog</title>
-      </Helmet>
       <Header
         image={Background}
         title={title}

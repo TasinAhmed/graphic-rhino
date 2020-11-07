@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { Helmet } from "react-helmet";
 import Header from "../../components/Header/Header";
 import Image from "../../images/michelsberg.jpg";
 
@@ -7,9 +6,6 @@ function ExampleCase() {
   const myRef = useRef(null);
   return (
     <>
-      <Helmet>
-        <title>Graphic Rhino | Example Blog</title>
-      </Helmet>
       <Header
         image={Image}
         title="Cafetaria Michelsberg, Spiere-Helkijn"

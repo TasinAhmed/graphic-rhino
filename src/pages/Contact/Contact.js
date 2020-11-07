@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/contact.jpg";
-import { Helmet } from "react-helmet";
 import MapWithAMarker from "../../components/Map/MapWithAMarker";
 
 const title = "Contacteer ons";
@@ -40,9 +39,6 @@ function Contact() {
 
   return (
     <>
-      <Helmet>
-        <title>Graphic Rhino | Contact</title>
-      </Helmet>
       <Header image={Background} title={title} text={text} scrollTo={myRef} />
       <main className="contact" ref={myRef}>
         <section className="information">

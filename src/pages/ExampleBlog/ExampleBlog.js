@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { Helmet } from "react-helmet";
 import Header from "../../components/Header/Header";
 import Background from "../../images/example-blog.jpg";
 import Amazon from "../../images/amazon.jpg";
@@ -21,9 +20,6 @@ function ExampleBlog() {
   const myRef = useRef(null);
   return (
     <>
-      <Helmet>
-        <title>Graphic Rhino | Example Blog</title>
-      </Helmet>
       <Header
         image={Background}
         title="Het belang van een goed logo"

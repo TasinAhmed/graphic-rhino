@@ -14,6 +14,13 @@ import ScrollToTop from "./ScrollToTop";
 import Cookie from "./components/Cookie/Cookie";
 import { CookiesProvider } from "react-cookie";
 import LHS from "./pages/LFS/LHS";
+import Debaveye from "./pages/Debaveye/Debaveye";
+import HHJ from "./pages/HHJ/HHJ";
+import Keurslager from "./pages/Keurslager/Keurslager";
+import Ebo from "./pages/Ebo/Ebo";
+import Cafetaria from "./pages/Cafetaria/Cafetaria";
+import Pitta from "./pages/Pitta/Pitta";
+import Malamute from "./pages/Malamute/Malamute";
 
 function App() {
   return (
@@ -32,6 +39,13 @@ function App() {
             <Route path="/graveyard" component={Graveyard} />
             <Route path="/contact" component={Contact} />
             <Route path="/lhs" component={LHS} />
+            <Route path="/debaveye" component={Debaveye} />
+            <Route path="/hhj" component={HHJ} />
+            <Route path="/keurslager" component={Keurslager} />
+            <Route path="/ebo" component={Ebo} />
+            <Route path="/cafetaria" component={Cafetaria} />
+            <Route path="/pitta" component={Pitta} />
+            <Route path="/malamute" component={Malamute} />
           </Switch>
           <Footer />
         </div>

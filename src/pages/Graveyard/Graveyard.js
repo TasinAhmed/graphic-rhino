@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/graveyard.jpg";
-import { Helmet } from "react-helmet";
 import Case from "../../components/Case/Case";
 import Image from "../../images/explore-1.jpg";
 
@@ -15,9 +14,6 @@ function Graveyard() {
   const myRef = useRef(null);
   return (
     <>
-      <Helmet>
-        <title>Graphic Rhino | Graveyard</title>
-      </Helmet>
       <Header
         image={Background}
         title={title}
