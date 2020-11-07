@@ -3,6 +3,7 @@ const Images = [
     url: "lhspreview.jpg",
     title: "LITTLE HANDMADE STORIES, AVELGEM",
     desc: "",
+    linkTo: "/lhs",
   },
   {
     url: "debaveyepreview.jpg",

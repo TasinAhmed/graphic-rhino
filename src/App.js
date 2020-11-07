@@ -11,10 +11,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Graveyard from "./pages/Graveyard/Graveyard";
 import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./ScrollToTop";
-import ExampleBlog from "./pages/ExampleBlog/ExampleBlog";
-import ExampleCase from "./pages/ExampleCase/ExampleCase";
 import Cookie from "./components/Cookie/Cookie";
 import { CookiesProvider } from "react-cookie";
+import LHS from "./pages/LFS/LHS";
 
 function App() {
   return (
@@ -32,8 +31,7 @@ function App() {
             <Route path="/blog" component={Blog} />
             <Route path="/graveyard" component={Graveyard} />
             <Route path="/contact" component={Contact} />
-            <Route path="/example-blog" component={ExampleBlog} />
-            <Route path="/example-case" component={ExampleCase} />
+            <Route path="/lhs" component={LHS} />
           </Switch>
           <Footer />
         </div>
