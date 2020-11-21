@@ -6,7 +6,7 @@ import Image from "../../images/explore-1.jpg";
 
 const title = "Design graveyard";
 const text =
-  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.";
+  "Lang niet al onze ontwerpen worden gekozen door onze klant. Soms maken wij meerdere voorstellen op, tot we op de perfecte versie stoten. Maar, daarom zijn we nog niet minder trots op de afgewezen voorstellen. Dit plekje van de site is dan ook volledig toegewijd aan afgekeurde, ongebruikte ontwerpen of creatieve exploten.";
 const desc =
   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. ";
 

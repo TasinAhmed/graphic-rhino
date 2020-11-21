@@ -10,8 +10,8 @@ function Quote({ name, text, anim, dur, del }) {
       className="quote"
     >
       <img src={Quotation} className="quote__icon" alt="Quotation" />
-      <p className="quote__quote">{text}</p>
       <p className="quote__name">{name}</p>
+      <p className="quote__quote">{text}</p>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import Masonry from "../../components/Masonry/Masonry";
 
 const title = "Blog";
 const text =
-  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.";
+  "Klanten helpen gaat niet enkel over adviseren en ontwerpen maken. Graag willen we ook jouw kennis bijschaven. Wil je meer weten over drukwerk, online marketing of één van onze andere diensten? Snuister eens door onze blog en leer bij! En wie weet merk je iets op waar jouw zaak nog nood aan heeft. Heb je daar vragen over? Dan helpen we je uiteraard, zeer graag verder!";
 
 function Blog() {
   const myRef = useRef(null);

@@ -31,13 +31,32 @@ import Client8 from "../../images/client-8.png";
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
   "Net als een stevige neushoorn leveren wij sterk grafisch werk! Wij gaan voor het niet alledaagse en bieden een grote variatie aan mogelijkheden.";
-const quote = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.";
-const name = "John Doe";
 const exploreText =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim ante sed velit aliquet finibus.";
-const desc = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.";
-const content =
-  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
+const content1 = (
+  <>
+    <p>
+      Honderden euro's aanrekenen voor een verkennend gesprek of tal van
+      meetings om je project te bespreken? Daar zijn wij alvast geen fan van!
+      Wij ontwerpen graag voor je, zonder al te veel extra nodeloos gepalaver.
+    </p>
+    <br />
+    <p>
+      Wist je ook al dat klanten bij ons boven alles staan? Wij houden het graag
+      persoonlijk, dat kei formele mailtje? Laat dat maar snel achterwege!{" "}
+    </p>
+    <br />
+    <p>
+      Als communicatiebureau ligt onze focus niet alleen op het maken van
+      ontwerpen, maar ook op het geven van advies. Wij delen namelijk graag onze
+      kennis met jou zodat jij en je bedrijf hier ook uit kunnen leren!{" "}
+    </p>
+    <br />
+    <p>
+      Wij zijn alvast benieuwd naar wie jij bent, dus spring gerust eens binnen!
+    </p>
+  </>
+);
 const reveal = 4;
 let count;
 
@@ -65,11 +84,14 @@ function Home() {
         <section className="brand">
           <div data-aos="fade-right" className="container">
             <div className="brand__box">
-              <div className="brand__title">Brand message here</div>
+              <div className="brand__title">ZOEK JE ONS?</div>
               <div className="brand__message">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et{" "}
+                Op zoek naar een communicatiebureau dat jouw ideeën kan omzetten
+                in een visueel meesterwerk? Nood aan een betaalbaar ontwerp, en
+                liever nog gisteren dan vandaag? Dan ben je bij ons zeer zeker
+                aan het juiste adres. Scrol en swipe gerust verder en leer ons
+                beter kennen. Overtuigd? Laat van je horen, wij leren je zeer
+                graag ook beter kennen!
               </div>
             </div>
           </div>
@@ -115,45 +137,35 @@ function Home() {
           <div data-aos="fade-right" className="container">
             <TextBlock
               title="Betaalbare designs/waarom Graphic Rhino"
-              content={content}
+              content={content1}
             />
           </div>
         </section>
         <section className="services">
           <div className="container">
             <div data-aos="zoom-in" data-aos-duration={500}>
-              <Service
-                image={Ser1}
-                name="Grafisch ontwerp"
-                desc={desc}
-                hover={true}
-              />
+              <Service image={Ser1} name="Grafisch ontwerp" hover={true} />
             </div>
             <div
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={200}
             >
-              <Service image={Ser2} name="Drukwerk" desc={desc} hover={true} />
+              <Service image={Ser2} name="Drukwerk" hover={true} />
             </div>
             <div
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={400}
             >
-              <Service image={Ser3} name="Animaties" desc={desc} hover={true} />
+              <Service image={Ser3} name="Animaties" hover={true} />
             </div>
             <div
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={600}
             >
-              <Service
-                image={Ser4}
-                name="Online marketing"
-                desc={desc}
-                hover={true}
-              />
+              <Service image={Ser4} name="Online marketing" hover={true} />
             </div>
           </div>
         </section>
@@ -240,28 +252,28 @@ function Home() {
           <div className="container">
             <h2 className="heading-2">Wat onze klanten zeggen</h2>
             <div data-aos="zoom-in" data-aos-duration={500}>
-              <Quote name={name} text={quote} />
+              <Quote name="JURGEN" text="Correcte opvolging en proper werk!" />
             </div>
             <div
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={200}
             >
-              <Quote name={name} text={quote} />
+              <Quote name="JESSICA" text="Super tevreden over ons nieuw logo" />
             </div>
             <div
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={400}
             >
-              <Quote name={name} text={quote} />
+              <Quote name="PHELINE" text="Goeie samenwerking!" />
             </div>
             <div
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={600}
             >
-              <Quote name={name} text={quote} />
+              <Quote name="KOEN" text="Verbazingwekkend!" />
             </div>
           </div>
         </section>
