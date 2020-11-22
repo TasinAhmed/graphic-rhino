@@ -12,7 +12,7 @@
 
     @include respond(sm) {
       grid-template-columns: 1fr;
-      row-gap: 0;
+      row-gap: 5rem;
     }
 
     p:not(:last-child) {
@@ -56,6 +56,7 @@
 
 .grid-full {
   grid-column: 1/-1;
+  justify-content: stretch;
 }
 
 iframe {

@@ -64,16 +64,19 @@ const Images = [
     url: "portfolio6.jpg",
     title: "HET LIJSTERNEST, INGOOIGEM",
     desc: "",
+    linkTo: "/het",
   },
   {
     url: "portfolio7.jpg",
     title: "BLACK - DIRK BRACKE",
     desc: "",
+    linkTo: "/db",
   },
   {
     url: "portfolio8.png",
     title: "MAGAZINE CROSSMEDIA",
     desc: "",
+    linkTo: "/mc",
   },
 ];
 

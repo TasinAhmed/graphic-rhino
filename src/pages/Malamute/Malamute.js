@@ -37,6 +37,36 @@ function Malamute() {
               hoe het nu met ze is.
             </p>
           </div>
+          <div className="grid-full">
+            <iframe
+              title="m1"
+              src="https://indd.adobe.com/embed/8b449c27-bfba-4c3e-9534-497506fd3531?startpage=1&allowFullscreen=true"
+              width="525px"
+              height="371px"
+              frameborder="0"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+          <div className="grid-full">
+            <iframe
+              title="m2"
+              src="https://indd.adobe.com/embed/c52e8280-8fe9-4c11-a4ff-e9c030f8623c?startpage=1&allowFullscreen=true"
+              width="525px"
+              height="371px"
+              frameborder="0"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+          <div className="grid-full">
+            <iframe
+              title="m3"
+              src="https://indd.adobe.com/embed/e44cfc41-c2e2-4070-9be5-dd94c34986de?startpage=1&allowFullscreen=true"
+              width="525px"
+              height="371px"
+              frameborder="0"
+              allowfullscreen=""
+            ></iframe>
+          </div>
           <img src={Img3} className="case-img" alt="" />
           <div className="case-content">
             <p>

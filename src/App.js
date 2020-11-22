@@ -23,6 +23,9 @@ import Pitta from "./pages/Pitta/Pitta";
 import Malamute from "./pages/Malamute/Malamute";
 import Eeckhout from "./pages/Eeckhout/Eeckhout";
 import Slagerij from "./pages/Slagerij/Slagerij";
+import Magazine from "./pages/Magazine/Magazine";
+import Black from "./pages/Black/Black";
+import Het from "./pages/Het/Het";
 
 function App() {
   return (
@@ -50,6 +53,9 @@ function App() {
             <Route path="/malamute" component={Malamute} />
             <Route path="/ew" component={Eeckhout} />
             <Route path="/sc" component={Slagerij} />
+            <Route path="/mc" component={Magazine} />
+            <Route path="/db" component={Black} />
+            <Route path="/het" component={Het} />
           </Switch>
           <Footer />
         </div>

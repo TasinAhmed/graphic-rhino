@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import Image from "../../images/portfolio1.jpg";
 import Img1 from "../../images/cafetaria-1.png";
 import Img2 from "../../images/cafetaria-2.jpg";
+import Special from "../../images/Cafetaria_Michelsberg_drankkaart.jpg";
 
 function Cafetaria() {
   return (
@@ -30,6 +31,7 @@ function Cafetaria() {
               vorm van een bierkroontje, heel toepasselijk voor een cafetaria.
             </p>
           </div>
+          <img src={Special} alt="" className="grid-full case-img" />
           <img src={Img2} className="case-img grid-img-r" alt="" />
           <div className="case-content grid-text-l">
             <p>

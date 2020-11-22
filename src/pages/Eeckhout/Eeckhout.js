@@ -27,6 +27,7 @@ function Eeckhout() {
               rood.
             </p>
           </div>
+          <img src={Image} alt="" className="grid-full case-img" />
           <img src={Img2} className="case-img grid-img-r" alt="" />
           <div className="case-content grid-text-l">
             <p>

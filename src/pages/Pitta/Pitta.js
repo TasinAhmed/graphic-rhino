@@ -3,6 +3,34 @@ import Header from "../../components/Header/Header";
 import Image from "../../images/portfolio2.jpg";
 import Img1 from "../../images/pitta-1.png";
 import Img2 from "../../images/pitta-2.jpg";
+import Slider1 from "../../images/Pitta_Melita_folder_producten_1.jpg";
+import Slider2 from "../../images/Pitta_Melita_folder_producten_2.jpg";
+import Slider3 from "../../images/Pitta_Melita_folder_producten_3.jpg";
+import Slider4 from "../../images/Pitta_Melita_folder_producten_4.jpg";
+import SmSlider1 from "../../images/Pitta_Melita_folder_producten_1 (Small).jpg";
+import SmSlider2 from "../../images/Pitta_Melita_folder_producten_2 (Small).jpg";
+import SmSlider3 from "../../images/Pitta_Melita_folder_producten_3 (Small).jpg";
+import SmSlider4 from "../../images/Pitta_Melita_folder_producten_4 (Small).jpg";
+import ImageGallery from "react-image-gallery";
+
+const images = [
+  {
+    original: Slider3,
+    thumbnail: SmSlider3,
+  },
+  {
+    original: Slider1,
+    thumbnail: SmSlider1,
+  },
+  {
+    original: Slider2,
+    thumbnail: SmSlider2,
+  },
+  {
+    original: Slider4,
+    thumbnail: SmSlider4,
+  },
+];
 
 function Pitta() {
   return (
@@ -19,6 +47,14 @@ function Pitta() {
               vond dat het wel eens tijd werd voor een nieuw eigen logo met het
               bijhorende drukwerk.
             </p>
+          </div>
+          <div className="grid-full">
+            <ImageGallery
+              items={images}
+              showBullets
+              showPlayButton={false}
+              showFullscreenButton={false}
+            />
           </div>
           <img src={Img2} className="case-img grid-img-r" alt="" />
           <div className="case-content grid-text-l">
