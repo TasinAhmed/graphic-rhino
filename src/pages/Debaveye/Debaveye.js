@@ -26,7 +26,7 @@ function Debaveye() {
               triggeren. Een flyer in de bus kan vaak leuker zijn dan een online
               reclame waar iedereen snel voorbij scrolt en de essentie nooit
               gezien heeft. Meer daarover kan je lezen in onze nieuwe blogpost
-              "De Kracht van papier".
+              <a href="http://www.google.com">"De Kracht van papier".</a>
             </p>
           </div>
         </div>

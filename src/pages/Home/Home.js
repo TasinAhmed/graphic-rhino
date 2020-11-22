@@ -144,28 +144,48 @@ function Home() {
         <section className="services">
           <div className="container">
             <div data-aos="zoom-in" data-aos-duration={500}>
-              <Service image={Ser1} name="Grafisch ontwerp" hover={true} />
+              <Service
+                image={Ser1}
+                name="Grafisch ontwerp"
+                hover={true}
+                desc="Branding, brochures, catalogi, you name it. Wij gaan ermee aan de slag!"
+              />
             </div>
             <div
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={200}
             >
-              <Service image={Ser2} name="Drukwerk" hover={true} />
+              <Service
+                image={Ser2}
+                name="Drukwerk"
+                hover={true}
+                desc="Flyers, affiches, werfborden,... Wij regelen het allemaal!"
+              />
             </div>
             <div
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={400}
             >
-              <Service image={Ser3} name="Animaties" hover={true} />
+              <Service
+                image={Ser3}
+                name="Animaties"
+                hover={true}
+                desc="Van een simpele logo animatie tot een heuse reclamevideo. Wij doen dat!"
+              />
             </div>
             <div
               data-aos="zoom-in"
               data-aos-duration={500}
               data-aos-delay={600}
             >
-              <Service image={Ser4} name="Online marketing" hover={true} />
+              <Service
+                image={Ser4}
+                name="Online marketing"
+                hover={true}
+                desc="Online campagnes? Die hebben voor ons geen geheimen!"
+              />
             </div>
           </div>
         </section>

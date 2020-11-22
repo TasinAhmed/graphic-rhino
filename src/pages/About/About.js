@@ -90,11 +90,15 @@ function About() {
           <div className="about__img" data-aos="fade-right">
             <img src={Img1} alt="About" />
           </div>
-          <TextBlock anim="fade-right" title="name" content={text2} />
+          <TextBlock
+            anim="fade-right"
+            title="what's in a name"
+            content={text2}
+          />
           <div className="about__img" data-aos="fade-right">
             <img src={Img2} alt="About" />
           </div>
-          <TextBlock anim="fade-right" title="beliefs" content={text3} />
+          <TextBlock anim="fade-right" title="onze focus" content={text3} />
         </div>
       </main>
     </>
