@@ -21,6 +21,8 @@ import Ebo from "./pages/Ebo/Ebo";
 import Cafetaria from "./pages/Cafetaria/Cafetaria";
 import Pitta from "./pages/Pitta/Pitta";
 import Malamute from "./pages/Malamute/Malamute";
+import Eeckhout from "./pages/Eeckhout/Eeckhout";
+import Slagerij from "./pages/Slagerij/Slagerij";
 
 function App() {
   return (
@@ -46,6 +48,8 @@ function App() {
             <Route path="/cafetaria" component={Cafetaria} />
             <Route path="/pitta" component={Pitta} />
             <Route path="/malamute" component={Malamute} />
+            <Route path="/ew" component={Eeckhout} />
+            <Route path="/sc" component={Slagerij} />
           </Switch>
           <Footer />
         </div>

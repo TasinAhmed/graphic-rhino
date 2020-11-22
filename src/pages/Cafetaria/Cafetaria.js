@@ -46,6 +46,15 @@ function Cafetaria() {
               het visitekaartje.
             </p>
           </div>
+          <iframe
+            title="cafe"
+            src="https://indd.adobe.com/embed/40e8e6b4-7cf8-4761-ba5b-080e1005e295?startpage=1&allowFullscreen=true"
+            width="525px"
+            height="371px"
+            frameborder="0"
+            allowfullscreen=""
+            className="grid-full"
+          ></iframe>
         </div>
       </main>
     </>

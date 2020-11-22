@@ -51,12 +51,14 @@ const Images = [
     url: "portfolio4.jpg",
     title: "EECKHOUT - WOODLINE, OOSTROZEBEKE",
     desc: "",
+    linkTo: "/ew",
   },
 
   {
     url: "portfolio5.jpg",
     title: "SLAGERIJ CANNAERT, ANZEGEM",
     desc: "",
+    linkTo: "/sc",
   },
   {
     url: "portfolio6.jpg",
