@@ -5,7 +5,7 @@ import MapWithAMarker from "../../components/Map/MapWithAMarker";
 
 const title = "Contacteer ons";
 const text =
-  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.";
+  "Hebben we je helemaal kunnen overtuigen om met ons in zee te gaan? Heb je vragen die dringend een antwoord zoeken? Contacteer ons gerust, we houden van een goed verhaal en leuke babbel.";
 
 function Contact() {
   const onSubmit = () => {

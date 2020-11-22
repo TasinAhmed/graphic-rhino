@@ -1,8 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Explore({ num, title, text, image, anim }) {
+function Explore({ num, title, text, image, anim, link }) {
   return (
-    <div className={`explore__box explore__box--${num}`} data-aos={anim}>
+    <Link
+      className={`explore__box explore__box--${num}`}
+      data-aos={anim}
+      to={link}
+    >
       <div className="explore__circle"></div>
       <div
         className="explore__img"
@@ -14,7 +19,7 @@ function Explore({ num, title, text, image, anim }) {
         <div className="explore__title">{title}</div>
         <div className="explore__text">{text}</div>
       </div>
-    </div>
+    </Link>
   );
 }
 

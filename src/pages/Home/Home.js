@@ -2,10 +2,6 @@ import React, { useRef, useEffect } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/home.jpg";
 import Quote from "../../components/Quote/Quote";
-import Img1 from "../../images/explore-1.jpg";
-import Img2 from "../../images/explore-2.jpg";
-import Img3 from "../../images/explore-3.jpg";
-import Img4 from "../../images/explore-4.jpg";
 import Ser1 from "../../images/service-1.png";
 import Ser2 from "../../images/service-2.png";
 import Ser3 from "../../images/service-3.png";
@@ -27,12 +23,12 @@ import Client5 from "../../images/client-5.png";
 import Client6 from "../../images/client-6.png";
 import Client7 from "../../images/client-7.jpg";
 import Client8 from "../../images/client-8.png";
+import cases from "../../pages/Cases/Images";
+import blogs from "../../pages/Blog/Images";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
   "Net als een stevige neushoorn leveren wij sterk grafisch werk! Wij gaan voor het niet alledaagse en bieden een grote variatie aan mogelijkheden.";
-const exploreText =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim ante sed velit aliquet finibus.";
 const content1 = (
   <>
     <p>
@@ -59,6 +55,19 @@ const content1 = (
 );
 const reveal = 4;
 let count;
+
+var caseArr = [];
+var blogArr = [];
+
+while (caseArr.length < 2) {
+  let r = Math.floor(Math.random() * cases.length);
+  if (caseArr.indexOf(r) === -1) caseArr.push(r);
+}
+
+while (blogArr.length < 2) {
+  let r = Math.floor(Math.random() * blogs.length);
+  if (blogArr.indexOf(r) === -1) blogArr.push(r);
+}
 
 function Home() {
   const myRef = useRef(null);
@@ -103,32 +112,36 @@ function Home() {
           >
             <Explore
               num={1}
-              title="case title"
-              text={exploreText}
-              image={Img1}
+              title={cases[caseArr[0]].title}
+              text={cases[caseArr[0]].desc}
+              image={require("../../images/" + cases[caseArr[0]].url)}
+              link={cases[caseArr[0]].linkTo}
               {...(isSM && { anim: "zoom-in" })}
             >
               >
             </Explore>
             <Explore
               num={2}
-              title="case title"
-              text={exploreText}
-              image={Img2}
+              title={cases[caseArr[1]].title}
+              text={cases[caseArr[1]].desc}
+              image={require("../../images/" + cases[caseArr[1]].url)}
+              link={cases[caseArr[1]].linkTo}
               {...(isSM && { anim: "zoom-in" })}
             ></Explore>
             <Explore
               num={3}
-              title="blog title"
-              text={exploreText}
-              image={Img3}
+              title={cases[blogArr[0]].title}
+              text={cases[blogArr[0]].desc}
+              image={require("../../images/" + cases[blogArr[0]].url)}
+              link={cases[blogArr[0]].linkTo}
               {...(isSM && { anim: "zoom-in" })}
             ></Explore>
             <Explore
               num={4}
-              title="blog title"
-              text={exploreText}
-              image={Img4}
+              title={cases[blogArr[1]].title}
+              text={cases[blogArr[1]].desc}
+              image={require("../../images/" + cases[blogArr[1]].url)}
+              link={cases[blogArr[1]].linkTo}
               {...(isSM && { anim: "zoom-in" })}
             ></Explore>
           </div>

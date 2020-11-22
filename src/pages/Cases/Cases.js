@@ -4,9 +4,9 @@ import Background from "../../images/cases.jpg";
 import Masonry from "../../components/Masonry/Masonry";
 import Images from "./Images";
 
-const title = "Wat wij bieden";
+const title = "Ons werk";
 const text =
-  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.";
+  "We kunnen het nu eenmaal niet ontkennen, wij zijn trots op wat we maken. Terecht? Daar kan je helemaal zelf over oordelen, scrol gerust eens door onze projecten!";
 
 function Cases() {
   const myRef = useRef(null);
