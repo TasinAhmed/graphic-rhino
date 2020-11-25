@@ -117,9 +117,7 @@ function Home() {
               image={require("../../images/" + cases[caseArr[0]].url)}
               link={cases[caseArr[0]].linkTo}
               {...(isSM && { anim: "zoom-in" })}
-            >
-              >
-            </Explore>
+            ></Explore>
             <Explore
               num={2}
               title={cases[caseArr[1]].title}
