@@ -33,6 +33,7 @@ import Verpakkingen from "./pages/Verpakkingen/Verpakkingen";
 import Waarom from "./pages/Waarom/Waarom";
 import Belangrijk from "./pages/Belangrijk/Belangrijk";
 import Sterk from "./pages/Sterk/Sterk";
+import Google from "./pages/Google/Google";
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
             <Route path="/wv" component={Waarom} />
             <Route path="/bel" component={Belangrijk} />
             <Route path="/sterk" component={Sterk} />
+            <Route path="/google" component={Google} />
           </Switch>
           <Footer />
         </div>

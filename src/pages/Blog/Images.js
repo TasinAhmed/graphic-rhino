@@ -41,6 +41,12 @@ const Images = [
     desc: "",
     linkTo: "/sterk",
   },
+  {
+    url: "markus-winkler-afW1hht0NSs-unsplash.jpg",
+    title: "Google Mijn Bedrijf",
+    desc: "",
+    linkTo: "/google",
+  },
 ];
 
 export default Images;
