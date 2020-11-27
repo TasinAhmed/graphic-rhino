@@ -26,6 +26,13 @@ import Slagerij from "./pages/Slagerij/Slagerij";
 import Magazine from "./pages/Magazine/Magazine";
 import Black from "./pages/Black/Black";
 import Het from "./pages/Het/Het";
+import Buitenreclame from "./pages/Buitenreclame/Buitenreclame";
+import Kracht from "./pages/Kracht/Kracht";
+import Motion from "./pages/Motion/Motion";
+import Verpakkingen from "./pages/Verpakkingen/Verpakkingen";
+import Waarom from "./pages/Waarom/Waarom";
+import Belangrijk from "./pages/Belangrijk/Belangrijk";
+import Sterk from "./pages/Sterk/Sterk";
 
 function App() {
   return (
@@ -56,6 +63,13 @@ function App() {
             <Route path="/mc" component={Magazine} />
             <Route path="/db" component={Black} />
             <Route path="/het" component={Het} />
+            <Route path="/bc" component={Buitenreclame} />
+            <Route path="/dkvp" component={Kracht} />
+            <Route path="/ma" component={Motion} />
+            <Route path="/ver" component={Verpakkingen} />
+            <Route path="/wv" component={Waarom} />
+            <Route path="/bel" component={Belangrijk} />
+            <Route path="/sterk" component={Sterk} />
           </Switch>
           <Footer />
         </div>

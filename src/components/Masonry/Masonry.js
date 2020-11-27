@@ -14,7 +14,7 @@ function Masonry({ images }) {
           />
           <div className="masonry__cover"></div>
           <div className="masonry__content">
-            <div className="masonry__title">{x.title}</div>
+            <div className="masonry__title">{x.title.toUpperCase()}</div>
             <div className="masonry__text">{x.desc}</div>
           </div>
         </div>

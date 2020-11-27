@@ -128,18 +128,18 @@ function Home() {
             ></Explore>
             <Explore
               num={3}
-              title={cases[blogArr[0]].title}
-              text={cases[blogArr[0]].desc}
-              image={require("../../images/" + cases[blogArr[0]].url)}
-              link={cases[blogArr[0]].linkTo}
+              title={blogs[blogArr[0]].title}
+              text={blogs[blogArr[0]].desc}
+              image={require("../../images/" + blogs[blogArr[0]].url)}
+              link={blogs[blogArr[0]].linkTo}
               {...(isSM && { anim: "zoom-in" })}
             ></Explore>
             <Explore
               num={4}
-              title={cases[blogArr[1]].title}
-              text={cases[blogArr[1]].desc}
-              image={require("../../images/" + cases[blogArr[1]].url)}
-              link={cases[blogArr[1]].linkTo}
+              title={blogs[blogArr[1]].title}
+              text={blogs[blogArr[1]].desc}
+              image={require("../../images/" + blogs[blogArr[1]].url)}
+              link={blogs[blogArr[1]].linkTo}
               {...(isSM && { anim: "zoom-in" })}
             ></Explore>
           </div>
