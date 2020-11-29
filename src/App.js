@@ -34,6 +34,7 @@ import Waarom from "./pages/Waarom/Waarom";
 import Belangrijk from "./pages/Belangrijk/Belangrijk";
 import Sterk from "./pages/Sterk/Sterk";
 import Google from "./pages/Google/Google";
+import Edgard from "./pages/Edgard/Edgard";
 
 function App() {
   return (
@@ -45,33 +46,37 @@ function App() {
           <Cookie />
           <Switch>
             <Route path="/" component={Home} exact />
-            <Route path="/about" component={About} />
+            <Route path="/over-ons" component={About} />
             <Route path="/diensten" component={Diensten} />
-            <Route path="/cases" component={Cases} />
-            <Route path="/blog" component={Blog} />
-            <Route path="/graveyard" component={Graveyard} />
+            <Route path="/cases" exact component={Cases} />
+            <Route path="/blog" exact component={Blog} />
+            <Route path="/graveyard" exact component={Graveyard} />
             <Route path="/contact" component={Contact} />
-            <Route path="/lhs" component={LHS} />
-            <Route path="/debaveye" component={Debaveye} />
-            <Route path="/hhj" component={HHJ} />
-            <Route path="/keurslager" component={Keurslager} />
-            <Route path="/ebo" component={Ebo} />
-            <Route path="/cafetaria" component={Cafetaria} />
-            <Route path="/pitta" component={Pitta} />
-            <Route path="/malamute" component={Malamute} />
-            <Route path="/ew" component={Eeckhout} />
-            <Route path="/sc" component={Slagerij} />
-            <Route path="/mc" component={Magazine} />
-            <Route path="/db" component={Black} />
-            <Route path="/het" component={Het} />
-            <Route path="/bc" component={Buitenreclame} />
-            <Route path="/dkvp" component={Kracht} />
-            <Route path="/ma" component={Motion} />
-            <Route path="/ver" component={Verpakkingen} />
-            <Route path="/wv" component={Waarom} />
-            <Route path="/bel" component={Belangrijk} />
-            <Route path="/sterk" component={Sterk} />
-            <Route path="/google" component={Google} />
+            <Route path="/cases/little-handmade-stories" component={LHS} />
+            <Route path="/cases/de-baveye-interieur" component={Debaveye} />
+            <Route path="/cases/happy-handmade-jewels" component={HHJ} />
+            <Route path="/cases/keurslager-crul" component={Keurslager} />
+            <Route path="/cases/energie-bouw-ovaere" component={Ebo} />
+            <Route path="/cases/cafetaria-michelsberg" component={Cafetaria} />
+            <Route path="/cases/pitta-melita" component={Pitta} />
+            <Route path="/cases/malamute-matters" component={Malamute} />
+            <Route path="/cases/eeckhout-woodline" component={Eeckhout} />
+            <Route path="/cases/slagerij-cannaert" component={Slagerij} />
+            <Route path="/cases/magazine-crossmedia" component={Magazine} />
+            <Route path="/cases/black" component={Black} />
+            <Route path="/cases/het-lijsternest" component={Het} />
+            <Route path="/blog/buitenreclame" component={Buitenreclame} />
+            <Route path="/blog/kracht-van-papier" component={Kracht} />
+            <Route path="/blog/motion-animatie" component={Motion} />
+            <Route path="/blog/verpakkingen" component={Verpakkingen} />
+            <Route path="/blog/waarom-video" component={Waarom} />
+            <Route
+              path="/blog/belang-consistente-huisstijl"
+              component={Belangrijk}
+            />
+            <Route path="/blog/sterk-logo" component={Sterk} />
+            <Route path="/blog/google-mijn-bedrijf" component={Google} />
+            <Route path="/graveyard/edgard-cooper" component={Edgard} />
           </Switch>
           <Footer />
         </div>

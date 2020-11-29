@@ -12,11 +12,12 @@ function Cookie() {
       <div className="container">
         <div className="cookie__title">Cookies & privacy</div>
         <div className="cookie__info">
-          We use cookies to personalize your experience. By continuing to visit
-          this website, you agree to our use of cookies.
+          We gebruiken cookies om uw ervaring te personaliseren. Door deze
+          website te blijven bezoeken, gaat u akkoord met ons gebruik van
+          cookies.
         </div>
         <Button
-          btnText="understood"
+          btnText="akkoord"
           click={() => {
             setCookie("accept", "true", {
               path: "/",

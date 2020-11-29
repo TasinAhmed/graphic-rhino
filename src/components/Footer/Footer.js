@@ -46,7 +46,7 @@ function Footer() {
         </div>
         <div className="footer__about">
           <div className="footer__subtitle">ontdek</div>
-          <Link to="/about" className="footer__link footer__item">
+          <Link to="/over-ons" className="footer__link footer__item">
             Over ons
           </Link>
           <Link to="/cases" className="footer__link footer__item">
@@ -72,9 +72,9 @@ function Footer() {
         </div>
 
         <div className="footer__legal">
-          <div className="footer__subtitle">legal</div>
+          <div className="footer__subtitle">handige links</div>
           <a href="/#" className="footer__link footer__item">
-            Privacy policy
+            Privacybeleid
           </a>
           <Link to="/contact" className="footer__link footer__item">
             Contacteer ons

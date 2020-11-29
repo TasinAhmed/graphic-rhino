@@ -16,8 +16,8 @@
   }
 
   &__media {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,10 +32,6 @@
 
   &__list {
     margin-left: 5rem;
-  }
-
-  .coating {
-    width: 70%;
   }
 
   .gewichten {
@@ -53,5 +49,9 @@
   .blg__video iframe {
     width: 100%;
     height: 100%;
+  }
+
+  &__media &__logos {
+    width: 30%;
   }
 }

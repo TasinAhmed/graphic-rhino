@@ -22,7 +22,11 @@ function Menu() {
             <NavLink exact to="/" activeClassName="active" onClick={closeMenu}>
               <li>Home</li>
             </NavLink>
-            <NavLink to="/about" activeClassName="active" onClick={closeMenu}>
+            <NavLink
+              to="/over-ons"
+              activeClassName="active"
+              onClick={closeMenu}
+            >
               <li>Over ons</li>
             </NavLink>
             <NavLink

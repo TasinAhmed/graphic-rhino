@@ -55,12 +55,13 @@ function Google() {
           <p>Volg deze stappen om je aan te melden bij Google Mijn Bedrijf:</p>
           <ol className="blg__list">
             <li>
+              Log in bij &nbsp;
               <a
                 rel="noopener noreferrer"
                 target="_blank"
                 href="http://business.google.com/?skipLandingPage=true&gmbsrc=ww-ww-et-gs-z-gmb-v-z-h~bhc-core-umybb"
               >
-                Log in bij Google Mijn Bedrijf
+                Google Mijn Bedrijf
               </a>
             </li>
             <li>

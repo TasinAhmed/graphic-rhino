@@ -110,7 +110,12 @@ function Kracht() {
             beschikking die je kunnen helpen bij je beslissing, want papier dat
             moet je nu eenmaal kunnen voelen.
           </p>
-          <img src={Img1} alt="" className="blg__media coating" />
+          <img
+            src={Img1}
+            alt=""
+            className="blg__media"
+            style={{ width: "50%" }}
+          />
           <h2 className="blg__title">Papiergewichten</h2>
           <p>
             Nu je al wat meer weet over papiersoorten vertel ik je graag wat

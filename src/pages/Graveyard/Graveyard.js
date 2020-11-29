@@ -27,6 +27,7 @@ function Graveyard() {
               image={require("../../images/" + x.url)}
               title={x.title}
               desc={x.desc}
+              link={x.linkTo}
             />
           ))}
         </div>

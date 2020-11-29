@@ -73,3 +73,20 @@ body {
   background-color: $color-primary;
   color: $color-white;
 }
+
+.image-gallery-icon .image-gallery-svg {
+  width: 40px;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+  max-height: 100vh;
+}

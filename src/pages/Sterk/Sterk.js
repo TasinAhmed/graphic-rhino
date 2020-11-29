@@ -42,9 +42,11 @@ function Sterk() {
             Zo zie je maar, een logo hoeft niet altijd moeilijk of vergezocht te
             zijn, een simpel logo kan evengoed.
           </p>
-          <img src={Img1} alt="" />
-          <img src={Img3} alt="" />
-          <img src={Img4} alt="" />
+          <div className="blg__media">
+            <img src={Img1} alt="" className="blg__logos" />
+            <img src={Img3} alt="" className="blg__logos" />
+            <img src={Img4} alt="" className="blg__logos" />
+          </div>
           <h2 className="blg__title">Herkenbaar</h2>
           <p>
             Dit kenmerk ligt dicht bij het vorige, een simpel logo. Een
