@@ -8,7 +8,7 @@ import Img3 from "../../images/MIGmotors_billboard_3850x2850_0220_voorstellen3.j
 function Motors() {
   return (
     <>
-      <Header title="Edgard & Cooper" image={HeadImg} />
+      <Header title="MIG Motors" image={HeadImg} />
       <div className="motors">
         <div className="container motors__container">
           <div className="motors__left">

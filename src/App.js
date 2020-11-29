@@ -36,6 +36,7 @@ import Sterk from "./pages/Sterk/Sterk";
 import Google from "./pages/Google/Google";
 import Edgard from "./pages/Edgard/Edgard";
 import Motors from "./pages/Motors/Motors";
+import Privacy from "./pages/Privacy/Privacy";
 
 function App() {
   return (
@@ -79,6 +80,7 @@ function App() {
             <Route path="/blog/google-mijn-bedrijf" component={Google} />
             <Route path="/graveyard/edgard-cooper" component={Edgard} />
             <Route path="/graveyard/mig-motors" component={Motors} />
+            <Route path="/privacy" component={Privacy} />
           </Switch>
           <Footer />
         </div>
