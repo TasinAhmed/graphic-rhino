@@ -440,26 +440,8 @@ function Privacy() {
           die mogelijks cookies zetten:
         </p>
         <ul>
-          <li>
-            Google Analytics, Google Adwords en Google Remarketing:{" "}
-            <a
-              href="https://policies.google.com/technologies/cookies?hl=nl&gl=be"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://policies.google.com/technologies/cookies?hl=nl&gl=be
-            </a>
-          </li>
-          <li>
-            Facebook pixel:{" "}
-            <a
-              href="https://www.facebook.com/policies/cookies/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://www.facebook.com/policies/cookies/
-            </a>
-          </li>
+          <li>Google Analytics, Google Adwords en Google Remarketing</li>
+          <li>Facebook pixel</li>
         </ul>
         <h3>OVERIGE EN ONVOORZIENE COOKIES</h3>
         <p>
@@ -485,16 +467,6 @@ function Privacy() {
           per browser. Raadpleeg indien nodig de helpfunctie van uw browser:
           Google Chrome, Firefox, Internet Explorer, Safari en Opera.
         </p>
-        <ul>
-          <li>
-            link google chrome:
-            https://support.google.com/chrome/answer/95647?hl=nl
-          </li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
       </div>
     </div>
   );
