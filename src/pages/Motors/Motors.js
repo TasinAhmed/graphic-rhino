@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import HeadImg from "../../images/ec.jpg";
 import Img1 from "../../images/MIGmotors_billboard_3850x2850_0220_voorstellen.jpg";
 import Img2 from "../../images/MIGmotors_billboard_3850x2850_0220_voorstellen2.jpg";
 import Img3 from "../../images/MIGmotors_billboard_3850x2850_0220_voorstellen3.jpg";
@@ -8,7 +7,7 @@ import Img3 from "../../images/MIGmotors_billboard_3850x2850_0220_voorstellen3.j
 function Motors() {
   return (
     <>
-      <Header title="MIG Motors" image={HeadImg} />
+      <Header title="MIG Motors" image={Img1} />
       <div className="motors">
         <div className="container motors__container">
           <div className="motors__left">

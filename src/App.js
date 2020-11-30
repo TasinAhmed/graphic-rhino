@@ -7,7 +7,12 @@ import About from "./pages/About/About";
 import Diensten from "./pages/Diensten/Diensten";
 import Cases from "./pages/Cases/Cases";
 import Blog from "./pages/Blog/Blog";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Graveyard from "./pages/Graveyard/Graveyard";
 import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./ScrollToTop";
@@ -81,6 +86,7 @@ function App() {
             <Route path="/graveyard/edgard-cooper" component={Edgard} />
             <Route path="/graveyard/mig-motors" component={Motors} />
             <Route path="/privacy" component={Privacy} />
+            <Route render={() => <Redirect to="/" />} />
           </Switch>
           <Footer />
         </div>

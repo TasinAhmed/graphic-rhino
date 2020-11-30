@@ -73,9 +73,9 @@ function Footer() {
 
         <div className="footer__legal">
           <div className="footer__subtitle">handige links</div>
-          <a href="/#" className="footer__link footer__item">
+          <Link to="/privacy" className="footer__link footer__item">
             Privacybeleid
-          </a>
+          </Link>
           <Link to="/contact" className="footer__link footer__item">
             Contacteer ons
           </Link>
