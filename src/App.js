@@ -16,7 +16,7 @@ import {
 import Graveyard from "./pages/Graveyard/Graveyard";
 import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./ScrollToTop";
-import Cookie from "./components/Cookie/Cookie";
+// import Cookie from "./components/Cookie/Cookie";
 import { CookiesProvider } from "react-cookie";
 import LHS from "./pages/LFS/LHS";
 import Debaveye from "./pages/Debaveye/Debaveye";
