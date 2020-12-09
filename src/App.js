@@ -50,7 +50,7 @@ function App() {
         <div className="App">
           <ScrollToTop />
           <Menu />
-          <Cookie />
+          {/* <Cookie /> */}
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/over-ons" component={About} />

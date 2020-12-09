@@ -2,15 +2,13 @@ import React, { useRef, useState } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/contact.jpg";
 import MapWithAMarker from "../../components/Map/MapWithAMarker";
+import emailjs from "emailjs-com";
 
 const title = "Contacteer ons";
 const text =
   "Hebben we je helemaal kunnen overtuigen om met ons in zee te gaan? Heb je vragen die dringend een antwoord zoeken? Contacteer ons gerust, we houden van een goed verhaal en leuke babbel.";
 
 function Contact() {
-  const onSubmit = () => {
-    console.log("Submitted");
-  };
   const [values, setValues] = useState({
     fName: "",
     lName: "",
@@ -18,23 +16,32 @@ function Contact() {
     phone: "",
     message: "",
   });
-  // const [errors, setErrors] = useState({
-  //   fName: "",
-  //   lName: "",
-  //   email: "",
-  //   phone: "",
-  //   message: "",
-  // });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  function sendEmail(e) {
     e.preventDefault();
-    onSubmit();
-  };
+
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_tjs91ag",
+        e.target,
+        "user_kYLV4H0AdUZxldunO9EGc"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
   const myRef = useRef(null);
 
   return (
@@ -51,7 +58,7 @@ function Contact() {
             lng={3.4277491}
           />
           <div className="contact__content">
-            <form className="form" onSubmit={handleSubmit} noValidate>
+            <form className="form" onSubmit={sendEmail} noValidate>
               <div className="form__group form__group--fname">
                 <label className="form__label" htmlFor="first-name">
                   First Name*
