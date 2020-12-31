@@ -4,10 +4,53 @@ import HeadImg from "../../images/jon-tyson-t2cp_cWMo3o-unsplash.jpg";
 import Img1 from "../../images/motion-graphics-london.gif";
 import Img2 from "../../images/Holla app.gif";
 import ReactPlayer from "react-player";
+import { Helmet } from "react-helmet";
 
 function Motion() {
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Motion graphics en animatie video’s uitgelegd - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Wat zijn motion graphics en waarom zou je ze gebruiken? Lees er alles over in onze blog en bekijk wat voorbeelden ter inspiratie!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/blog/motion-animatie"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Motion graphics en animatie video’s uitgelegd - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Wat zijn motion graphics en waarom zou je ze gebruiken? Lees er alles over in onze blog en bekijk wat voorbeelden ter inspiratie!"
+        />
+      </Helmet>
       <Header image={HeadImg} title="Motion/animatie" />
       <div className="blg">
         <div className="container blg__container">

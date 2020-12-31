@@ -4,10 +4,47 @@ import Header from "../../components/Header/Header";
 import Img1 from "../../images/lhs-1.jpg";
 import Img2 from "../../images/lhs-2.jpg";
 import Img3 from "../../images/lhs-3.jpg";
+import { Helmet } from "react-helmet";
 
 function LHS() {
   return (
     <>
+      <Helmet>
+        <meta name="title" content="Little Handmade Stories, Avelgem" />
+
+        <meta
+          name="description"
+          content="Little Handmade Stories is net opgestarte concept store die nood had aan een eigen branding, hoe we dat aangepakt hebben? Dat lees je hier!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/cases/little-handmade-stories"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta property="og:title" content="Little Handmade Stories, Avelgem" />
+
+        <meta
+          property="og:description"
+          content="Little Handmade Stories is net opgestarte concept store die nood had aan een eigen branding, hoe we dat aangepakt hebben? Dat lees je hier!"
+        />
+      </Helmet>
       <Header image={Image} title="LITTLE HANDMADE STORIES, AVELGEM" />
       <main className="lhs">
         <div className="container case-container">

@@ -14,6 +14,7 @@ import Ser10 from "../../images/service-10.png";
 import Ser11 from "../../images/service-11.png";
 import Ser12 from "../../images/service-12.png";
 import Service from "../../components/Service/Service";
+import { Helmet } from "react-helmet";
 
 const title = "Wat wij bieden";
 const text =
@@ -23,6 +24,45 @@ function Diensten() {
   const myRef = useRef(null);
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Een full service reclamebureau op afstand of bij jou op kantoor! - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Offline? Online? Wij regelen met plezier beide voor jou! Bij Graphic Rhino kan je terecht voor sterk grafisch ontwerp voor zowel drukwerk, sociale media tot websites en animaties."
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta property="og:url" content="https://graphicrhino.be/diensten" />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Een full service reclamebureau op afstand of bij jou op kantoor! - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Offline? Online? Wij regelen met plezier beide voor jou! Bij Graphic Rhino kan je terecht voor sterk grafisch ontwerp voor zowel drukwerk, sociale media tot websites en animaties."
+        />
+      </Helmet>
       <Header
         image={Background}
         title={title}

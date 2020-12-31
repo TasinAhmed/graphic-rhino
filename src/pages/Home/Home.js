@@ -25,6 +25,7 @@ import Client7 from "../../images/client-7.jpg";
 import Client8 from "../../images/client-8.png";
 import cases from "../../pages/Cases/Images";
 import blogs from "../../pages/Blog/Images";
+import { Helmet } from "react-helmet";
 
 const title = "TAKE DESIGN BY IT’S HORNS";
 const text =
@@ -81,6 +82,32 @@ function Home() {
   }, []);
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Graphic Rhino - grafisch ontwerp en online marketing"
+        />
+        <meta
+          name="description"
+          content="Graphic Rhino is een full service reclamebureau in Outrijve waar je terecht kan voor strak design met een serieuze hoek af. Net als een stevige neushoorn leveren wij sterk grafisch werk! "
+        />
+        <meta
+          name="keywords"
+          content="grafisch ontwerp, grafisch vormgever, online marketing, offline marketing, reclamebureau, huisstijl, communicatie, drukwerk, reclamecampagne, outrijve, avelgem, zwevegem"
+        />
+        <meta property="og:url" content="https://graphicrhino.be/" />
+        <meta property="og:site_name" content="Graphic Rhino" />
+        <meta property="og:locale" content="nl_BE" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Graphic Rhino - grafisch ontwerp en online marketing"
+        />
+        <meta
+          property="og:description"
+          content="Graphic Rhino is een full service reclamebureau in Outrijve waar je terecht kan voor strak design met een serieuze hoek af. Net als een stevige neushoorn leveren wij sterk grafisch werk!"
+        />
+      </Helmet>
       <Header
         image={Background}
         title={title}

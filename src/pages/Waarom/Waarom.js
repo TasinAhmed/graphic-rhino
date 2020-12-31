@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Header from "../../components/Header/Header";
 import HeadImg from "../../images/jakob-owens-CiUR8zISX60-unsplash.jpg";
 import Info from "../../images/video-buyers-journey-infographic.jpg";
@@ -6,6 +7,48 @@ import Info from "../../images/video-buyers-journey-infographic.jpg";
 function Waarom() {
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Video en videoadvertenties van nabij bekeken - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Wat zijn de voordelen van videoadvertentie en welke soorten bestaan er allemaal? Lees er hier alles over!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/blog/waarom-video"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Video en videoadvertenties van nabij bekeken - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Wat zijn de voordelen van videoadvertentie en welke soorten bestaan er allemaal? Lees er hier alles over!"
+        />
+      </Helmet>
       <Header image={HeadImg} title="Waarom video" />
       <div className="blg">
         <div className="container blg__container">

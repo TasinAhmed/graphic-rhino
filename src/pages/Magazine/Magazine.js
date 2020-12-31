@@ -2,10 +2,47 @@ import React from "react";
 import Image from "../../images/portfolio8.png";
 import Main from "../../images/Magazine_crossmedia_cover.jpg";
 import Header from "../../components/Header/Header";
+import { Helmet } from "react-helmet";
 
 function Magazine() {
   return (
     <>
+      <Helmet>
+        <meta name="title" content="Magazine crossmedia" />
+
+        <meta
+          name="description"
+          content="Een crossmedia magazine kan je zowel gedrukt lezen als op een iPad, hoe dat precies werkt? Dat lees je hier!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/cases/magazine-crossmedia"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta property="og:title" content="Magazine crossmedia" />
+
+        <meta
+          property="og:description"
+          content="Een crossmedia magazine kan je zowel gedrukt lezen als op een iPad, hoe dat precies werkt? Dat lees je hier!"
+        />
+      </Helmet>
       <Header image={Image} title="MAGAZINE CROSSMEDIA" />
       <main className="lhs">
         <div className="container case-container">

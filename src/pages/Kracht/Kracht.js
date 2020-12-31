@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Header from "../../components/Header/Header";
 import HeadImg from "../../images/blogpost3.jpg";
 import Img1 from "../../images/TabelVergelijkingCoatings.jpg";
@@ -7,6 +8,48 @@ import Img2 from "../../images/TabelVergelijkingGewichten.jpg";
 function Kracht() {
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Offline marketing en papier in detail bekeken - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Waarom zou je nog voor offline marketing kiezen en hoe zorg je ervoor dat jouw drukwerk opvalt en past bij je branding? Dat lees je hier!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/blog/kracht-van-papier"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Offline marketing en papier in detail bekeken - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Waarom zou je nog voor offline marketing kiezen en hoe zorg je ervoor dat jouw drukwerk opvalt en past bij je branding? Dat lees je hier!"
+        />
+      </Helmet>
       <Header image={HeadImg} title="DE KRACHT VAN PAPIER" />
       <div className="blg">
         <div className="container blg__container">

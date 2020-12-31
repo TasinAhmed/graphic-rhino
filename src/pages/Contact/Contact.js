@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/contact.jpg";
-import MapWithAMarker from "../../components/Map/MapWithAMarker";
 import emailjs from "emailjs-com";
+import { MapContainer as LeaftletMap, TileLayer } from "react-leaflet";
+import { Helmet } from "react-helmet";
 
 const title = "Contacteer ons";
 const text =
@@ -46,17 +47,54 @@ function Contact() {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Contacteer ons voor een vrijblijvende offerte & een kop thee - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Contacteer ons voor al je vragen. Wij zorgen voor de antwoorden bij een lekkere kop thee. We zijn vlot bereikbaar en je kan voor de deur parkeren."
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta property="og:url" content="https://graphicrhino.be/contact" />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Contacteer ons voor een vrijblijvende offerte & een kop thee - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Contacteer ons voor al je vragen. Wij zorgen voor de antwoorden bij een lekkere kop thee. We zijn vlot bereikbaar en je kan voor de deur parkeren."
+        />
+      </Helmet>
       <Header image={Background} title={title} text={text} scrollTo={myRef} />
       <main className="contact" ref={myRef}>
         <section className="information">
-          <MapWithAMarker
-            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi31TdptmmtjtJbOeX3sts18QAJq7F2ZQ&v=3.exp&libraries=geometry,drawing,places"
-            loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div className="map" />}
-            mapElement={<div style={{ height: `100%` }} />}
-            lat={50.7558602}
-            lng={3.4277491}
-          />
+          <LeaftletMap center={{ lat: 43.653225, lng: -79.383186 }} zoom={9}>
+            <TileLayer
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+          </LeaftletMap>
           <div className="contact__content">
             <form className="form" onSubmit={sendEmail} noValidate>
               <div className="form__group form__group--fname">

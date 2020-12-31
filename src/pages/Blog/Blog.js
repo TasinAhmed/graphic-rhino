@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import Background from "../../images/blog.jpg";
 import Images from "./Images";
 import Masonry from "../../components/Masonry/Masonry";
+import { Helmet } from "react-helmet";
 
 const title = "Blog";
 const text =
@@ -12,6 +13,45 @@ function Blog() {
   const myRef = useRef(null);
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Expertblog vol grafische kennis en advies - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="We delen graag onze kennis in over onderwerpen als video, logo’s, grafische termen en online marketing."
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta property="og:url" content="https://graphicrhino.be/blog" />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Expertblog vol grafische kennis en advies - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="We delen graag onze kennis in over onderwerpen als video, logo’s, grafische termen en online marketing."
+        />
+      </Helmet>
       <Header
         image={Background}
         title={title}

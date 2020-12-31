@@ -3,9 +3,46 @@ import Header from "../../components/Header/Header";
 import Image from "../../images/hhjpreview2.jpg";
 import Img1 from "../../images/hhj-1.jpg";
 import Img2 from "../../images/hhj-2.jpg";
+import { Helmet } from "react-helmet";
 function HHJ() {
   return (
     <>
+      <Helmet>
+        <meta name="title" content="Happy Handmade Jewels, Avelgem" />
+
+        <meta
+          name="description"
+          content="Happy Handmade Jewels is een nieuw merk op de markt van glasjuwelen en bij een nieuw merk hoort natuurlijke ook een sterke huisstijl. Lees er hier meer over!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/cases/happy-handmade-jewels"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta property="og:title" content="Happy Handmade Jewels, Avelgem" />
+
+        <meta
+          property="og:description"
+          content="Happy Handmade Jewels is een nieuw merk op de markt van glasjuwelen en bij een nieuw merk hoort natuurlijke ook een sterke huisstijl. Lees er hier meer over!"
+        />
+      </Helmet>
       <Header image={Image} title="HAPPY HANDMADE JEWELS, OUTRIJVE" />
       <main className="lhs">
         <div className="container case-container">

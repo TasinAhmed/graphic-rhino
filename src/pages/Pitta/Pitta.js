@@ -12,6 +12,7 @@ import SmSlider2 from "../../images/Pitta_Melita_folder_producten_2 (Small).jpg"
 import SmSlider3 from "../../images/Pitta_Melita_folder_producten_3 (Small).jpg";
 import SmSlider4 from "../../images/Pitta_Melita_folder_producten_4 (Small).jpg";
 import ImageGallery from "react-image-gallery";
+import { Helmet } from "react-helmet";
 
 const images = [
   {
@@ -35,6 +36,42 @@ const images = [
 function Pitta() {
   return (
     <>
+      <Helmet>
+        <meta name="title" content="Pitta Melita, Avelgem" />
+
+        <meta
+          name="description"
+          content="Pitta Melita had nood aan een nieuwe branding met bijhorende gevouwen A6 flyer. Hoe we dat aangepakt hebben? Dat lees je hier!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/cases/pitta-melita"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta property="og:title" content="Pitta Melita, Avelgem" />
+
+        <meta
+          property="og:description"
+          content="Pitta Melita had nood aan een nieuwe branding met bijhorende gevouwen A6 flyer. Hoe we dat aangepakt hebben? Dat lees je hier!"
+        />
+      </Helmet>
       <Header image={Image} title="PITTA MELITA, AVELGEM" />
       <main className="lhs">
         <div className="container case-container">

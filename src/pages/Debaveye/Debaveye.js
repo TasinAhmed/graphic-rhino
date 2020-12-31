@@ -2,10 +2,47 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Image from "../../images/debaveyepreview.jpg";
 import Img1 from "../../images/debaveye-1.jpg";
+import { Helmet } from "react-helmet";
 
 function Debaveye() {
   return (
     <>
+      <Helmet>
+        <meta name="title" content="De Baveye Interieur, Outrijve" />
+
+        <meta
+          name="description"
+          content="Promotiemateriaal ontwerpen? Geen enkele probleem voor ons, zo verzorgden we de A4 flyer van De Baveye Interieur. Lees er hier meer over!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/cases/de-baveye-interieur"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta property="og:title" content="De Baveye Interieur, Outrijve" />
+
+        <meta
+          property="og:description"
+          content="Promotiemateriaal ontwerpen? Geen enkele probleem voor ons, zo verzorgden we de A4 flyer van De Baveye Interieur. Lees er hier meer over!"
+        />
+      </Helmet>
       <Header image={Image} title="DE BAVEYE INTERIEUR, OUTRIJVE" />
       <main className="lhs">
         <div className="container case-container">

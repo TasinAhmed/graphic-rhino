@@ -1,10 +1,53 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Header from "../../components/Header/Header";
 import HeadImg from "../../images/Shipwreckedbranding.jpg";
 
 function Belangrijk() {
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Waarom is een consistente huisstijl belangrijk? - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Wat is het belang van een consistente huisstijl, hoe begin je er aan en met wat moet je allemaal rekening houden? Lees er meer over in onze blog!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/blog/belang-consistente-huisstijl"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Waarom is een consistente huisstijl belangrijk? - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Wat is het belang van een consistente huisstijl, hoe begin je er aan en met wat moet je allemaal rekening houden? Lees er meer over in onze blog!"
+        />
+      </Helmet>
       <Header
         image={HeadImg}
         title="WAAROM EEN CONSISTENTE HUISSTIJL BELANGRIJK IS"

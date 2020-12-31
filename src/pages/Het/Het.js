@@ -11,6 +11,7 @@ import Img7 from "../../images/Het_Lijsternest_magazine_advertentie.jpg";
 import Img8 from "../../images/Het_Lijsternest_flyer evenement.png";
 import Img9 from "../../images/Het_Lijsternest_verpakking.jpg";
 import ImageGallery from "react-image-gallery";
+import { Helmet } from "react-helmet";
 
 const images = [
   {
@@ -30,6 +31,42 @@ const images = [
 function Het() {
   return (
     <>
+      <Helmet>
+        <meta name="title" content="Het Lijsternest, Ingooigem" />
+
+        <meta
+          name="description"
+          content="Het Lijsternest werd in een nieuw jasje gestopt voor onze eindwerk opdracht, van branding tot promotiemateriaal en animatie. Hoe we dat aangepakt hebben? Dat lees je hier!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/cases/het-lijsternest"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta property="og:title" content="Het Lijsternest, Ingooigem" />
+
+        <meta
+          property="og:description"
+          content="Het Lijsternest werd in een nieuw jasje gestopt voor onze eindwerk opdracht, van branding tot promotiemateriaal en animatie. Hoe we dat aangepakt hebben? Dat lees je hier!"
+        />
+      </Helmet>
       <Header image={Image} title="HET LIJSTERNEST, INGOOIGEM" />
       <main className="lhs">
         <div className="container case-container">

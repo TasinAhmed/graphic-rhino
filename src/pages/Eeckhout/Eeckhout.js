@@ -3,10 +3,47 @@ import Image from "../../images/Eeckhout_Woodline_jas.png";
 import Img1 from "../../images/Eeckhout_Woodline_logo.png";
 import Img2 from "../../images/Eeckhout_Woodline_visitekaartje.jpg";
 import Header from "../../components/Header/Header";
+import { Helmet } from "react-helmet";
 
 function Eeckhout() {
   return (
     <>
+      <Helmet>
+        <meta name="title" content="Eeckhout-Woodline, Oostrozebeke" />
+
+        <meta
+          name="description"
+          content="Nieuw logo met bijhorende werkkleding en visitekaartjes voor het transportbedrijf Eeckhout-Woodline. Lees er hier alles over!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/cases/eeckhout-woodline"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta property="og:title" content="Eeckhout-Woodline, Oostrozebeke" />
+
+        <meta
+          property="og:description"
+          content="Nieuw logo met bijhorende werkkleding en visitekaartjes voor het transportbedrijf Eeckhout-Woodline. Lees er hier alles over!"
+        />
+      </Helmet>
       <Header image={Image} title="EECKHOUT - WOODLINE, OOSTROZEBEKE" />
       <main className="lhs">
         <div className="container case-container">

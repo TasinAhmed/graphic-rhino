@@ -5,10 +5,53 @@ import Img1 from "../../images/Amazonlogo.jpg";
 import Img2 from "../../images/cocacola.jpg";
 import Img3 from "../../images/Fedexlogo.png";
 import Img4 from "../../images/Beatslogo.png";
+import { Helmet } from "react-helmet";
 
 function Sterk() {
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Wat is het belang van een goed logo - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Waarom is een logo en een huisstijl belangrijk? Waar moet je allemaal rekening mee houden? Dat lees je in onze blogpost!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/blog/sterk-logo"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Wat is het belang van een goed logo - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Waarom is een logo en een huisstijl belangrijk? Waar moet je allemaal rekening mee houden? Dat lees je in onze blogpost!"
+        />
+      </Helmet>
       <Header image={HeadImg} title="HET BELANG VAN EEN GOED LOGO" />
       <div className="blg">
         <div className="container blg__container">

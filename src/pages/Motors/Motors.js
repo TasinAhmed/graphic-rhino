@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Header from "../../components/Header/Header";
 import Img1 from "../../images/MIGmotors_billboard_3850x2850_0220_voorstellen.jpg";
 import Img2 from "../../images/MIGmotors_billboard_3850x2850_0220_voorstellen2.jpg";
@@ -7,6 +8,48 @@ import Img3 from "../../images/MIGmotors_billboard_3850x2850_0220_voorstellen3.j
 function Motors() {
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Ongebruikte ontwerpen voor MIG Motors - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Niet elk ontwerp voor MIG Motors wordt direct goedgekeurd, maar daarom zijn we er niet minder trots op. Bekijk hier wat werd afgekeurd!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/graveyard/mig-motors"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Ongebruikte ontwerpen voor MIG Motors - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Niet elk ontwerp voor MIG Motors wordt direct goedgekeurd, maar daarom zijn we er niet minder trots op. Bekijk hier wat werd afgekeurd!"
+        />
+      </Helmet>
       <Header title="MIG Motors" image={Img1} />
       <div className="motors">
         <div className="container motors__container">

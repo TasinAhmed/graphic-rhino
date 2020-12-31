@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ReactPlayer from "react-player/lazy";
 import Header from "../../components/Header/Header";
 import HeadImg from "../../images/dj-johnson-tgoO5H81nrU-unsplash.jpg";
@@ -6,6 +7,48 @@ import HeadImg from "../../images/dj-johnson-tgoO5H81nrU-unsplash.jpg";
 function Buitenreclame() {
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Tips en inspiratie rond buitenreclame - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Wat is buitenreclame en waarom zou je ervoor kiezen? Dat lees je allemaal in onze blog erover!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/blog/buitenreclame"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Tips en inspiratie rond buitenreclame - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Wat is buitenreclame en waarom zou je ervoor kiezen? Dat lees je allemaal in onze blog erover!"
+        />
+      </Helmet>
       <Header image={HeadImg} title="Buitenreclame" />
       <div className="blg">
         <div className="container blg__container">

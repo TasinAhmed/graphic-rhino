@@ -3,10 +3,50 @@ import Header from "../../components/Header/Header";
 import Image from "../../images/ebopreview.jpg";
 import Img1 from "../../images/ebo-1.jpg";
 import Img2 from "../../images/ebo-2.jpg";
+import { Helmet } from "react-helmet";
 
 function Ebo() {
   return (
     <>
+      <Helmet>
+        <meta name="title" content="EBO - Energie & Bouw Ovaere, Ingooigem" />
+
+        <meta
+          name="description"
+          content="Logo ontwerp met bijhorende visitekaartjes en subtiele wagen bestickering voor EBO, benieuwd naar dit project? Lees er hier meer over!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/cases/energie-bouw-ovaere"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="EBO - Energie & Bouw Ovaere, Ingooigem"
+        />
+
+        <meta
+          property="og:description"
+          content="Logo ontwerp met bijhorende visitekaartjes en subtiele wagen bestickering voor EBO, benieuwd naar dit project? Lees er hier meer over!"
+        />
+      </Helmet>
       <Header image={Image} title="EBO, INGOOIGEM" />
       <main className="lhs">
         <div className="container case-container">

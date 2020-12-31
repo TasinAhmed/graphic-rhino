@@ -4,10 +4,50 @@ import Img1 from "../../images/malamute-1.png";
 import Img2 from "../../images/malamute-2.png";
 import Img3 from "../../images/malamute-3.png";
 import Header from "../../components/Header/Header";
+import { Helmet } from "react-helmet";
 
 function Malamute() {
   return (
     <>
+      <Helmet>
+        <meta name="title" content="Malamute Matters, Groot-Brittannië" />
+
+        <meta
+          name="description"
+          content="We doen ook vrijwilligerswerk, zo maken we alle ontwerpen voor Malamute Matters, van social media visuals tot brochures. Benieuwd wat we nog allemaal ontwerpen voor hen? Dat lees je hier!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/cases/malamute-matters"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Malamute Matters, Groot-Brittannië"
+        />
+
+        <meta
+          property="og:description"
+          content="We doen ook vrijwilligerswerk, zo maken we alle ontwerpen voor Malamute Matters, van social media visuals tot brochures. Benieuwd wat we nog allemaal ontwerpen voor hen? Dat lees je hier!"
+        />
+      </Helmet>
       <Header image={Image} title="MALAMUTE MATTERS, GROOT-BRITTANNIË" />
       <main className="lhs">
         <div className="container case-container">

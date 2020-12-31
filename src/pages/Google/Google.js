@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Header from "../../components/Header/Header";
 import HeadImg from "../../images/markus-winkler-afW1hht0NSs-unsplash.jpg";
 import Img1 from "../../images/Schermafbeelding 2020-10-27 om 22.23.40.jpg";
@@ -7,6 +8,48 @@ import Img2 from "../../images/Schermafbeelding 2020-10-27 om 22.24.07.jpg";
 function Google() {
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Wat is Google Mijn Bedrijf? - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Wat is Google Mijn Bedrijf en hoe zorgt het ervoor dat je beter vindbaar bent online? Lees er hier meer over!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/blog/google-mijn-bedrijf"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Wat is Google Mijn Bedrijf? - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Wat is Google Mijn Bedrijf en hoe zorgt het ervoor dat je beter vindbaar bent online? Lees er hier meer over!"
+        />
+      </Helmet>
       <Header image={HeadImg} title="Google Mijn Bedrijf" />
       <div className="blg">
         <div className="container blg__container">

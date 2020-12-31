@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ReactPlayer from "react-player";
 import Header from "../../components/Header/Header";
 import HeadImg from "../../images/boxed-water-is-better-7mr6Yx-8WLc-unsplash.jpg";
@@ -6,6 +7,48 @@ import HeadImg from "../../images/boxed-water-is-better-7mr6Yx-8WLc-unsplash.jpg
 function Verpakkingen() {
   return (
     <>
+      <Helmet>
+        <meta
+          name="title"
+          content="Wat zijn de voordelen van een verpakking met je logo? - Graphic Rhino"
+        />
+
+        <meta
+          name="description"
+          content="Wat zijn de voordelen van een verpakking met je logo of in stijl van je branding? Lees er alles over in onze blog en bekijk wat voorbeelden ter inspiratie!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/blog/verpakkingen"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Wat zijn de voordelen van een verpakking met je logo? - Graphic Rhino"
+        />
+
+        <meta
+          property="og:description"
+          content="Wat zijn de voordelen van een verpakking met je logo of in stijl van je branding? Lees er alles over in onze blog en bekijk wat voorbeelden ter inspiratie!"
+        />
+      </Helmet>
       <Header image={HeadImg} title="Verpakkingen" />
       <div className="blg">
         <div className="blg__container container">

@@ -4,10 +4,50 @@ import Image from "../../images/portfolio1.jpg";
 import Img1 from "../../images/cafetaria-1.png";
 import Img2 from "../../images/cafetaria-2.jpg";
 import Special from "../../images/Cafetaria_Michelsberg_drankkaart.jpg";
+import { Helmet } from "react-helmet";
 
 function Cafetaria() {
   return (
     <>
+      <Helmet>
+        <meta name="title" content="Cafetaria Michelsberg, Spiere-Helkijn" />
+
+        <meta
+          name="description"
+          content="Bij een nieuwe horecazaak hoort een sterke branding, zo verzorgden we de volledige branding voor Cafetaria Michelsberg. Lees er hier alles over!"
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="og:url"
+          content="https://graphicrhino.be/cases/cafetaria-michelsberg"
+        />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta
+          property="og:title"
+          content="Cafetaria Michelsberg, Spiere-Helkijn"
+        />
+
+        <meta
+          property="og:description"
+          content="Bij een nieuwe horecazaak hoort een sterke branding, zo verzorgden we de volledige branding voor Cafetaria Michelsberg. Lees er hier alles over!"
+        />
+      </Helmet>
       <Header image={Image} title="CAFETARIA MICHELSBERG, SPIERE-HELKIJN" />
       <main className="lhs">
         <div className="container case-container">

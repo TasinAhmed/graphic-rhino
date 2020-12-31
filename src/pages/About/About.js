@@ -6,6 +6,7 @@ import Img1 from "../../images/about-1.jpg";
 import Img2 from "../../images/about-2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 
 const title = "LEREN WE ELKAAR WAT BETER KENNEN?";
 const text =
@@ -76,6 +77,39 @@ function About() {
   }, []);
   return (
     <>
+      <Helmet>
+        <meta name="title" content="Over ons - Graphic Rhino" />
+
+        <meta
+          name="description"
+          content="Net als een stevige neushoorn leveren wij sterk grafisch werk! Wij gaan voor het niet alledaagse en bieden een grote variatie aan mogelijkheden."
+        />
+
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/graphicrhino/"
+        />
+
+        <meta property="og:url" content="https://graphicrhino.be/over-ons" />
+
+        <meta property="og:site_name" content="Graphic Rhino" />
+
+        <meta property="og:locale" content="nl_BE" />
+
+        <meta property="og:type" content="article" />
+
+        <meta property="og:title" content="Over ons - Graphic Rhino" />
+
+        <meta
+          property="og:description"
+          content="Net als een stevige neushoorn leveren wij sterk grafisch werk! Wij gaan voor het niet alledaagse en bieden een grote variatie aan mogelijkheden."
+        />
+      </Helmet>
       <Header
         image={Background}
         title={title}
