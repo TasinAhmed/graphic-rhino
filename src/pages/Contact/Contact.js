@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/contact.jpg";
 import emailjs from "emailjs-com";
-import { MapContainer as LeaftletMap, TileLayer } from "react-leaflet";
+import { MapContainer as LeaftletMap, TileLayer, Marker } from "react-leaflet";
 import { Helmet } from "react-helmet";
 
 const title = "Contacteer ons";
@@ -89,11 +89,12 @@ function Contact() {
       <Header image={Background} title={title} text={text} scrollTo={myRef} />
       <main className="contact" ref={myRef}>
         <section className="information">
-          <LeaftletMap center={{ lat: 43.653225, lng: -79.383186 }} zoom={9}>
+          <LeaftletMap center={{ lat: 50.756289, lng: 3.42887 }} zoom={17}>
             <TileLayer
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
+            <Marker position={{ lat: 50.756289, lng: 3.42887 }} />
           </LeaftletMap>
           <div className="contact__content">
             <form className="form" onSubmit={sendEmail} noValidate>
