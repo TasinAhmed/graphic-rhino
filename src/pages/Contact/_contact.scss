@@ -33,19 +33,29 @@
     width: 100%;
     max-width: 50rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
-    row-gap: 4rem;
+    row-gap: 3rem;
+
+    &__error {
+      color: #ff0033;
+      position: absolute;
+      top: 103%;
+      font-size: 1.4rem;
+      right: 0;
+    }
 
     &__input {
-      padding-bottom: 1rem;
+      padding: 1rem;
       width: 100%;
-      border: none;
       transition: all 0.3s;
       font-size: 1.8rem;
       color: rgb(85, 85, 85);
+      border: 1px solid lightgray;
+      border-radius: 3px;
+      transition: all 0.25s ease-in-out;
 
       &:focus {
+        border: 1px solid #72c1a7;
         outline: none;
       }
 
@@ -71,7 +81,7 @@
 
       label {
         margin-bottom: 1rem;
-        color: #999999;
+        color: black;
         font-size: 1.6rem;
 
         @include respond(md) {
@@ -101,5 +111,6 @@
   .btn[type="submit"] {
     grid-column: 1/-1;
     justify-self: center;
+    margin-top: 2rem;
   }
 }

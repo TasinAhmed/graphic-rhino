@@ -42,6 +42,10 @@ import Google from "./pages/Google/Google";
 import Edgard from "./pages/Edgard/Edgard";
 import Motors from "./pages/Motors/Motors";
 import Privacy from "./pages/Privacy/Privacy";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+
+toast.configure({ position: "top-center" });
 
 function App() {
   return (

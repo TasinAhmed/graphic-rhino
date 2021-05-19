@@ -1,49 +1,45 @@
 import React, { useRef, useState } from "react";
 import Header from "../../components/Header/Header";
 import Background from "../../images/contact.jpg";
-import emailjs from "emailjs-com";
 import { MapContainer as LeaftletMap, TileLayer, Marker } from "react-leaflet";
 import { Helmet } from "react-helmet";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const title = "Contacteer ons";
 const text =
   "Hebben we je helemaal kunnen overtuigen om met ons in zee te gaan? Heb je vragen die dringend een antwoord zoeken? Contacteer ons gerust, we houden van een goed verhaal en leuke babbel.";
 
 function Contact() {
-  const [values, setValues] = useState({
-    fName: "",
-    lName: "",
-    email: "",
-    phone: "",
-    message: "",
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm({
+    defaultValues: { name: "", email: "", phone: "", message: "" },
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setValues({ ...values, [name]: value });
-  };
+  const [isSending, setIsSending] = useState(false);
 
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_tjs91ag",
-        e.target,
-        "user_kYLV4H0AdUZxldunO9EGc"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
   const myRef = useRef(null);
+
+  const onSubmit = async (data) => {
+    setIsSending(true);
+    try {
+      const response = (
+        await axios.post(`${process.env.REACT_APP_API_URL}/contact`, data)
+      ).data;
+
+      toast.success(response);
+      reset();
+    } catch (error) {
+      toast.error(error.response.data);
+    } finally {
+      setIsSending(false);
+    }
+  };
 
   return (
     <>
@@ -97,44 +93,28 @@ function Contact() {
             <Marker position={{ lat: 50.756289, lng: 3.42887 }} />
           </LeaftletMap>
           <div className="contact__content">
-            <form className="form" onSubmit={sendEmail} noValidate>
-              <div className="form__group form__group--fname">
-                <label className="form__label" htmlFor="first-name">
-                  First Name*
+            <form className="form" onSubmit={handleSubmit(onSubmit)} noValidate>
+              <div className="form__group form__group--name">
+                <label className="form__label" htmlFor="name">
+                  Name
                 </label>
                 <input
                   className="form__input"
                   required
                   type="text"
-                  id="first-name"
-                  name="fName"
-                  value={values.fName}
-                  onChange={handleChange}
+                  id="name"
+                  name="name"
+                  {...register("name", {
+                    required: "Please fill the required field",
+                  })}
                 />
-                <div className="form__border">
-                  <div className="form__fill"></div>
-                </div>
-              </div>
-              <div className="form__group form__group--lname">
-                <label className="form__label" htmlFor="last-name">
-                  Last Name*
-                </label>
-                <input
-                  className="form__input"
-                  required
-                  type="text"
-                  id="last-name"
-                  name="lName"
-                  value={values.lName}
-                  onChange={handleChange}
-                />
-                <div className="form__border">
-                  <div className="form__fill"></div>
-                </div>
+                {errors.name && (
+                  <p className="form__error">{errors.name.message}</p>
+                )}
               </div>
               <div className="form__group form__group--email">
                 <label className="form__label" htmlFor="email">
-                  Email*
+                  Email
                 </label>
                 <input
                   className="form__input"
@@ -142,16 +122,22 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  value={values.email}
-                  onChange={handleChange}
+                  {...register("email", {
+                    required: "Please fill the required field",
+                    pattern: {
+                      value: /^\S+@\S+\.\S+$/,
+                      message: "Invalid email address.",
+                    },
+                  })}
                 />
-                <div className="form__border">
-                  <div className="form__fill"></div>
-                </div>
+                {errors.email && (
+                  <p className="form__error">{errors.email.message}</p>
+                )}
               </div>
               <div className="form__group form__group--phone">
                 <label className="form__label" htmlFor="phone">
-                  Telefoonnummer
+                  Telefoonnummer -{" "}
+                  <span style={{ color: "gray" }}>Optional</span>
                 </label>
                 <input
                   className="form__input"
@@ -159,16 +145,15 @@ function Contact() {
                   pattern="\d+"
                   id="phone"
                   name="phone"
-                  value={values.phone}
-                  onChange={handleChange}
+                  {...register("phone")}
                 />
-                <div className="form__border">
-                  <div className="form__fill"></div>
-                </div>
+                {errors.phone && (
+                  <p className="form__error">{errors.phone.message}</p>
+                )}
               </div>
               <div className="form__group form__group--message">
                 <label className="form__label" htmlFor="message">
-                  Bericht*
+                  Bericht
                 </label>
                 <textarea
                   className="form__input"
@@ -176,14 +161,15 @@ function Contact() {
                   type="text"
                   id="message"
                   name="message"
-                  value={values.message}
-                  onChange={handleChange}
+                  {...register("message", {
+                    required: "Please fill the required field",
+                  })}
                 />
-                <div className="form__border">
-                  <div className="form__fill"></div>
-                </div>
+                {errors.message && (
+                  <p className="form__error">{errors.message.message}</p>
+                )}
               </div>
-              <button type="submit" className="btn">
+              <button type="submit" className="btn" disabled={isSending}>
                 verzenden
               </button>
             </form>
