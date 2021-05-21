@@ -128,7 +128,7 @@ const Contact = () => {
             <form className="form" onSubmit={handleSubmit(onSubmit)} noValidate>
               <div className="form__group form__group--name">
                 <label className="form__label" htmlFor="name">
-                  Name
+                  Naam
                 </label>
                 <input
                   className="form__input"
@@ -137,7 +137,7 @@ const Contact = () => {
                   id="name"
                   name="name"
                   {...register("name", {
-                    required: "Please fill the required field",
+                    required: "Gelieve het verplichte veld in te vullen",
                   })}
                 />
                 {errors.name && (
@@ -146,7 +146,7 @@ const Contact = () => {
               </div>
               <div className="form__group form__group--email">
                 <label className="form__label" htmlFor="email">
-                  Email
+                  E-mail
                 </label>
                 <input
                   className="form__input"
@@ -155,10 +155,10 @@ const Contact = () => {
                   id="email"
                   name="email"
                   {...register("email", {
-                    required: "Please fill the required field",
+                    required: "Gelieve het verplichte veld in te vullen",
                     pattern: {
                       value: /^\S+@\S+\.\S+$/,
-                      message: "Invalid email address.",
+                      message: "Ongeldig e-mailadres!",
                     },
                   })}
                 />
@@ -169,7 +169,7 @@ const Contact = () => {
               <div className="form__group form__group--phone">
                 <label className="form__label" htmlFor="phone">
                   Telefoonnummer -{" "}
-                  <span style={{ color: "gray" }}>Optional</span>
+                  <span style={{ color: "gray" }}>Optioneel</span>
                 </label>
                 <input
                   className="form__input"
@@ -194,7 +194,7 @@ const Contact = () => {
                   id="message"
                   name="message"
                   {...register("message", {
-                    required: "Please fill the required field",
+                    required: "Gelieve het verplichte veld in te vullen",
                   })}
                 />
                 {errors.message && (
