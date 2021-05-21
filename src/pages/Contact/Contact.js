@@ -49,6 +49,7 @@ const Contact = () => {
     defaultValues: { name: "", email: "", phone: "", message: "" },
   });
 
+  // eslint-disable-next-line
   const [isSending, setIsSending] = useState(false);
 
   const myRef = useRef(null);
