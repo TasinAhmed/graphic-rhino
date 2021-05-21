@@ -8,7 +8,7 @@ import Diensten from "./pages/Diensten/Diensten";
 import Cases from "./pages/Cases/Cases";
 import Blog from "./pages/Blog/Blog";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
   Redirect,

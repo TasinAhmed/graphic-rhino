@@ -125,7 +125,7 @@
   height: 5rem;
   text-align: center;
   width: 15rem;
-  border-radius: 40px;
+  border-radius: 100px;
   background: #fff;
   border: 2px solid #72c1a7;
   color: #72c1a7;
@@ -166,21 +166,23 @@
   }
 }
 .correct {
-  font-size: 13px;
+  font-size: 1.6rem;
   color: white;
   background: #72c1a7;
   &:after {
-    content: "\2714";
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
   }
 }
 
 .incorrect {
-  font-size: 13px;
+  font-size: 1.6rem;
   color: white;
   border-color: #ff0033;
   background: #ff0033;
   &:after {
-    content: "\2716";
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
   }
 
   &:hover {

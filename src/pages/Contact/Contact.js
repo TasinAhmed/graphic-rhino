@@ -49,7 +49,6 @@ const Contact = () => {
     defaultValues: { name: "", email: "", phone: "", message: "" },
   });
 
-  // eslint-disable-next-line
   const [isSending, setIsSending] = useState(false);
 
   const myRef = useRef(null);
@@ -63,13 +62,13 @@ const Contact = () => {
         await axios.post(`${process.env.REACT_APP_API_URL}/contact`, data)
       ).data;
 
-      setTimeout(() => submitSuccess(response), 1000);
+      setTimeout(() => submitSuccess(response), 100);
     } catch (error) {
       setTimeout(() => {
         submitError(error);
-      }, 1000);
+      }, 100);
     } finally {
-      setTimeout(submitClear, 2000);
+      setTimeout(submitClear, 1100);
     }
   };
 
@@ -203,6 +202,7 @@ const Contact = () => {
               </div>
               <div className="btn-container">
                 <button
+                  disabled={isSending}
                   className="contact-btn"
                   type="submit"
                   ref={contactBtn}
