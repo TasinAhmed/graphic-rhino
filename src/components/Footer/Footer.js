@@ -34,7 +34,7 @@ function Footer() {
                 <FaLinkedin size={24} />
               </a>
               <a
-                href="https://www.behance.net/"
+                href="https://www.behance.net/GraphicRhino"
                 target="_blank"
                 rel="noopener noreferrer"
               >

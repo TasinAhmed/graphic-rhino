@@ -17,7 +17,7 @@ function Header({ image, title, text, btnText, link, scrollTo }) {
       }}
     >
       <Link to="/">
-        <img src={Logo} className="header__logo" alt="Graphic Rhino"></img>
+        <img src={Logo} className="header__logo" alt="Graphic Rhino" />
       </Link>
       <div className="container">
         <div className="header__content" data-aos="fade-down">

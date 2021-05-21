@@ -7,11 +7,39 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { toast } from "react-toastify";
 
+const coords = { lat: 50.7553, lng: 3.42865 };
+
 const title = "Contacteer ons";
 const text =
   "Hebben we je helemaal kunnen overtuigen om met ons in zee te gaan? Heb je vragen die dringend een antwoord zoeken? Contacteer ons gerust, we houden van een goed verhaal en leuke babbel.";
 
-function Contact() {
+const Contact = () => {
+  // Progress Button
+  const contactBtn = useRef(null);
+
+  function submitLoad() {
+    contactBtn.current.classList.add("onclick");
+  }
+
+  function submitSuccess(response) {
+    toast.success(response);
+    contactBtn.current.classList.remove("onclick");
+    contactBtn.current.classList.add("correct");
+    reset();
+  }
+
+  function submitError(error) {
+    toast.error(error.response.data);
+    contactBtn.current.classList.remove("onclick");
+    contactBtn.current.classList.add("incorrect");
+  }
+
+  function submitClear() {
+    contactBtn.current.classList.remove("correct");
+    contactBtn.current.classList.remove("incorrect");
+    setIsSending(false);
+  }
+
   const {
     register,
     handleSubmit,
@@ -26,18 +54,21 @@ function Contact() {
   const myRef = useRef(null);
 
   const onSubmit = async (data) => {
+    submitLoad();
     setIsSending(true);
+
     try {
       const response = (
         await axios.post(`${process.env.REACT_APP_API_URL}/contact`, data)
       ).data;
 
-      toast.success(response);
-      reset();
+      setTimeout(() => submitSuccess(response), 1000);
     } catch (error) {
-      toast.error(error.response.data);
+      setTimeout(() => {
+        submitError(error);
+      }, 1000);
     } finally {
-      setIsSending(false);
+      setTimeout(submitClear, 2000);
     }
   };
 
@@ -85,12 +116,12 @@ function Contact() {
       <Header image={Background} title={title} text={text} scrollTo={myRef} />
       <main className="contact" ref={myRef}>
         <section className="information">
-          <LeaftletMap center={{ lat: 50.756289, lng: 3.42887 }} zoom={17}>
+          <LeaftletMap center={coords} zoom={17}>
             <TileLayer
               attribution='&copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>'
-              url="https://api.mapbox.com/styles/v1/ahmedm31/ckov2sr5l052o19lilz3l5y3j/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWhtZWRtMzEiLCJhIjoiY2tubTd4Y2szMG8wMzJ2bnl0dTBnb3h3eSJ9.QXoYOl3Cy0O3XFsEJ5SUcQ"
+              url="https://api.mapbox.com/styles/v1/ahmedm31/ckoxvicrw1sce17s6mp4b3juq/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWhtZWRtMzEiLCJhIjoiY2tubTd4Y2szMG8wMzJ2bnl0dTBnb3h3eSJ9.QXoYOl3Cy0O3XFsEJ5SUcQ"
             />
-            <Marker position={{ lat: 50.756289, lng: 3.42887 }} />
+            <Marker position={coords} />
           </LeaftletMap>
           <div className="contact__content">
             <form className="form" onSubmit={handleSubmit(onSubmit)} noValidate>
@@ -169,15 +200,19 @@ function Contact() {
                   <p className="form__error">{errors.message.message}</p>
                 )}
               </div>
-              <button type="submit" className="btn" disabled={isSending}>
-                verzenden
-              </button>
+              <div className="btn-container">
+                <button
+                  className="contact-btn"
+                  type="submit"
+                  ref={contactBtn}
+                ></button>
+              </div>
             </form>
           </div>
         </section>
       </main>
     </>
   );
-}
+};
 
 export default Contact;

@@ -114,3 +114,86 @@
     margin-top: 2rem;
   }
 }
+
+.btn-container {
+  margin-top: 3rem;
+  text-align: center;
+  justify-self: center;
+}
+.contact-btn {
+  outline: none;
+  height: 5rem;
+  text-align: center;
+  width: 15rem;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #72c1a7;
+  color: #72c1a7;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font: {
+    size: 1.6rem;
+    weight: bold;
+  }
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover {
+    color: white;
+    background: #72c1a7;
+  }
+  &:active {
+    //letter-spacing: 2px;
+    letter-spacing: 2px;
+  }
+  &:after {
+    content: "SUBMIT";
+  }
+}
+.onclick {
+  width: 5rem;
+  border-color: lightgray;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #72c1a7;
+  animation: rotating 2s 0.25s linear infinite;
+
+  &:after {
+    content: "";
+  }
+  &:hover {
+    color: #72c1a7;
+    background: white;
+  }
+}
+.correct {
+  font-size: 13px;
+  color: white;
+  background: #72c1a7;
+  &:after {
+    content: "\2714";
+  }
+}
+
+.incorrect {
+  font-size: 13px;
+  color: white;
+  border-color: #ff0033;
+  background: #ff0033;
+  &:after {
+    content: "\2716";
+  }
+
+  &:hover {
+    border-color: #ff0033;
+    background: #ff0033;
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
